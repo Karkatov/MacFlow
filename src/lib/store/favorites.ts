@@ -30,6 +30,6 @@ export const useFavoritesStore = create<FavoritesState>()(
       has: (id) => get().favorites.includes(id),
       clear: () => set({ favorites: [] }),
     }),
-    { name: 'livewalls:favorites' },
+    { name: 'macflow:favorites' },
   ),
 );

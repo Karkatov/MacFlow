@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-11-04T18:43:24.770Z",
+  "counts": {
+    "images": 9,
+    "videos": 4,
+    "showcase": 1
+  },
+  "items": [
+    {
+      "id": "demo-aurora",
+      "kind": "image",
+      "title": "Demo Aurora",
+      "src": "/media/images/demo-aurora.png",
+      "poster": "/media/images/demo-aurora.png",
+      "file": "demo-aurora.png"
+    },
+    {
+      "id": "demo-aurora-2",
+      "kind": "image",
+      "title": "Demo Aurora",
+      "src": "/media/images/demo-aurora.svg",
+      "poster": "/media/images/demo-aurora.svg",
+      "file": "demo-aurora.svg"
+    },
+    {
+      "id": "demo-cosmos",
+      "kind": "image",
+      "title": "Demo Cosmos",
+      "src": "/media/images/demo-cosmos.svg",
+      "poster": "/media/images/demo-cosmos.svg",
+      "file": "demo-cosmos.svg"
+    },
+    {
+      "id": "demo-dunes",
+      "kind": "image",
+      "title": "Demo Dunes",
+      "src": "/media/images/demo-dunes.svg",
+      "poster": "/media/images/demo-dunes.svg",
+      "file": "demo-dunes.svg"
+    },
+    {
+      "id": "demo-forest",
+      "kind": "image",
+      "title": "Demo Forest",
+      "src": "/media/images/demo-forest.svg",
+      "poster": "/media/images/demo-forest.svg",
+      "file": "demo-forest.svg"
+    },
+    {
+      "id": "demo-nebula",
+      "kind": "image",
+      "title": "Demo Nebula",
+      "src": "/media/images/demo-nebula.svg",
+      "poster": "/media/images/demo-nebula.svg",
+      "file": "demo-nebula.svg"
+    },
+    {
+      "id": "demo-neon",
+      "kind": "image",
+      "title": "Demo Neon",
+      "src": "/media/images/demo-neon.svg",
+      "poster": "/media/images/demo-neon.svg",
+      "file": "demo-neon.svg"
+    },
+    {
+      "id": "demo-ocean",
+      "kind": "image",
+      "title": "Demo Ocean",
+      "src": "/media/images/demo-ocean.svg",
+      "poster": "/media/images/demo-ocean.svg",
+      "file": "demo-ocean.svg"
+    },
+    {
+      "id": "demo-silk",
+      "kind": "image",
+      "title": "Demo Silk",
+      "src": "/media/images/demo-silk.svg",
+      "poster": "/media/images/demo-silk.svg",
+      "file": "demo-silk.svg"
+    },
+    {
+      "id": "demo-aurora-3",
+      "kind": "video",
+      "title": "Demo Aurora",
+      "src": "/media/videos/demo-aurora.mp4",
+      "poster": "/media/posters/demo-aurora.jpg",
+      "file": "demo-aurora.mp4"
+    },
+    {
+      "id": "demo-cosmos-2",
+      "kind": "video",
+      "title": "Demo Cosmos",
+      "src": "/media/videos/demo-cosmos.mp4",
+      "poster": "/media/posters/demo-cosmos.jpg",
+      "file": "demo-cosmos.mp4"
+    },
+    {
+      "id": "demo-neon-2",
+      "kind": "video",
+      "title": "Demo Neon",
+      "src": "/media/videos/demo-neon.mp4",
+      "poster": "/media/posters/demo-neon.jpg",
+      "file": "demo-neon.mp4"
+    },
+    {
+      "id": "demo-ocean-2",
+      "kind": "video",
+      "title": "Demo Ocean",
+      "src": "/media/videos/demo-ocean.mp4",
+      "poster": "/media/posters/demo-ocean.jpg",
+      "file": "demo-ocean.mp4"
+    }
+  ],
+  "showcase": [
+    {
+      "id": "showcase-demo-showcase",
+      "kind": "video",
+      "title": "Demo Showcase",
+      "src": "/media/showcase/demo-showcase.mp4",
+      "poster": "/media/posters/demo-showcase.jpg"
+    }
+  ],
+  "hero": {
+    "id": "demo-aurora-3",
+    "kind": "video",
+    "title": "Demo Aurora",
+    "src": "/media/videos/demo-aurora.mp4",
+    "poster": "/media/posters/demo-aurora.jpg",
+    "file": "demo-aurora.mp4"
+  },
+  "fallbackHero": {
+    "id": "demo-aurora",
+    "kind": "image",
+    "title": "Demo Aurora",
+    "src": "/media/images/demo-aurora.png",
+    "poster": "/media/images/demo-aurora.png",
+    "file": "demo-aurora.png"
+  },
+  "demo": {
+    "id": "showcase-demo-showcase",
+    "kind": "video",
+    "title": "Demo Showcase",
+    "src": "/media/showcase/demo-showcase.mp4",
+    "poster": "/media/posters/demo-showcase.jpg"
+  }
+}

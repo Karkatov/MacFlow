@@ -30,7 +30,7 @@ export function AccountPanel() {
   const tToast = useTranslations('toast');
 
   const [user, setUser] = useState<User | null>(null);
-  const [email, setEmail] = useState('demo@livewalls.app');
+  const [email, setEmail] = useState('demo@macflow.app');
   const [loading, setLoading] = useState(false);
 
   const purchases: Purchase[] = user ? purchasesForUser(user.id) : [];

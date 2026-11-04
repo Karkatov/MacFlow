@@ -1,6 +1,5 @@
 import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
-import { mockWallpapers } from '@/data/mock/wallpapers';
 import { siteConfig } from '@/config/site';
 
 /**
@@ -16,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPaths = [
     { path: '', priority: 1, changeFrequency: 'weekly' as const },
-    { path: '/wallpapers', priority: 0.9, changeFrequency: 'daily' as const },
     { path: '/pricing', priority: 0.9, changeFrequency: 'monthly' as const },
     { path: '/about', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/faq', priority: 0.7, changeFrequency: 'monthly' as const },
@@ -36,15 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: item.changeFrequency,
         priority: item.priority,
-      });
-    }
-
-    for (const wallpaper of mockWallpapers) {
-      entries.push({
-        url: `${base}/${locale}/wallpapers/${wallpaper.slug}`,
-        lastModified: new Date(wallpaper.createdAt),
-        changeFrequency: 'weekly',
-        priority: 0.7,
       });
     }
   }

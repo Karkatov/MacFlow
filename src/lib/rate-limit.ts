@@ -47,14 +47,14 @@ const DEFAULT_WINDOW_MS = 60_000;
 const MAX_ENTRIES = 10_000;
 
 const globalForRateLimit = globalThis as unknown as {
-  __livewallsRateLimitStore?: Map<string, RateLimitRecord>;
+  __macflowRateLimitStore?: Map<string, RateLimitRecord>;
 };
 
 let operationsSinceSweep = 0;
 
 function getStore(): Map<string, RateLimitRecord> {
-  globalForRateLimit.__livewallsRateLimitStore ??= new Map();
-  return globalForRateLimit.__livewallsRateLimitStore;
+  globalForRateLimit.__macflowRateLimitStore ??= new Map();
+  return globalForRateLimit.__macflowRateLimitStore;
 }
 
 function sweep(store: Map<string, RateLimitRecord>, now: number): void {

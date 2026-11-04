@@ -10,7 +10,7 @@ type RemotePattern = { protocol: 'http' | 'https'; hostname: string };
  */
 function imageRemotePatterns(): RemotePattern[] {
   const patterns: RemotePattern[] = [
-    { protocol: 'https', hostname: '**.livewalls.app' },
+    { protocol: 'https', hostname: '**.macflow.app' },
     { protocol: 'https', hostname: '**.timeweb.cloud' },
   ];
 
@@ -51,7 +51,7 @@ function imageRemotePatterns(): RemotePattern[] {
  *  - 'standalone' — output: 'standalone' для Docker/VPS.
  *
  * Для статического экспорта с поддоменом задайте NEXT_BASE_PATH
- * (например '/LiveWallsSite') и NEXT_ASSET_PREFIX.
+ * (например '/MacFlowSite') и NEXT_ASSET_PREFIX.
  */
 const buildMode = resolveBuildMode();
 const isStandaloneMode = buildMode === 'standalone';

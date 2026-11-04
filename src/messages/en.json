@@ -1,13 +1,13 @@
 {
   "meta": {
-    "siteTitle": "LiveWalls — live wallpapers for macOS",
-    "siteDescription": "LiveWalls is a macOS app for live wallpapers: videos and images on your desktop, lock screen and screensaver. 24-hour trial, prices in rubles.",
+    "siteTitle": "MacFlow — live wallpapers for macOS",
+    "siteDescription": "MacFlow is a macOS app for live wallpapers: videos and images on your desktop, lock screen and screensaver. 24-hour trial, prices in rubles.",
     "ogDescription": "Videos and images on your desktop, lock screen and screensaver. 24-hour trial, prices in rubles.",
     "twitterDescription": "Live wallpapers, lock screen and screensaver. 24-hour trial."
   },
   "common": {
     "skipToContent": "Skip to content",
-    "appName": "LiveWalls",
+    "appName": "MacFlow",
     "tagline": "Live wallpapers for macOS",
     "loading": "Loading…",
     "error": "Something went wrong",
@@ -53,7 +53,8 @@
     "themeDark": "Dark",
     "themeLight": "Light",
     "themeSystem": "System",
-    "language": "Language"
+    "language": "Language",
+    "home": "Home"
   },
   "home": {
     "hero": {
@@ -64,7 +65,7 @@
       "cta": "Download for free",
       "ctaSecondary": "Browse the catalog",
       "trialNote": "24-hour free trial — no card required",
-      "appPreviewLabel": "LiveWalls app preview",
+      "appPreviewLabel": "MacFlow app preview",
       "stats": {
         "wallpapers": "wallpapers in the catalog",
         "categories": "categories",
@@ -119,13 +120,13 @@
     "reviews": {
       "eyebrow": "Reviews",
       "title": "What users say",
-      "description": "Impressions from people who use LiveWalls every day.",
+      "description": "Impressions from people who use MacFlow every day.",
       "rating": "Rated {rating} out of 5"
     },
     "cta": {
       "title": "Try it free for 24 hours",
       "description": "Full catalog, live Lock Screen and the Bend effect. No card needed.",
-      "button": "Download LiveWalls",
+      "button": "Download MacFlow",
       "secondary": "See pricing"
     },
     "faq": {
@@ -227,9 +228,9 @@
   },
   "about": {
     "title": "About the app",
-    "subtitle": "LiveWalls is a native macOS app for live wallpapers, written in Swift.",
-    "whatTitle": "What is LiveWalls",
-    "whatBody": "LiveWalls turns video loops and still images into your desktop, Lock Screen and Screen Saver background. The app lives in the menu bar, stays out of the Dock and runs on a dedicated wallpaper extension, so the animation keeps going even when the window is closed.",
+    "subtitle": "MacFlow is a native macOS app for live wallpapers, written in Swift.",
+    "whatTitle": "What is MacFlow",
+    "whatBody": "MacFlow turns video loops and still images into your desktop, Lock Screen and Screen Saver background. The app lives in the menu bar, stays out of the Dock and runs on a dedicated wallpaper extension, so the animation keeps going even when the window is closed.",
     "featuresTitle": "Key features",
     "featuresBody": "Everything that makes the app feel alive.",
     "screenshotsTitle": "Interface",
@@ -258,7 +259,7 @@
       },
       "system": {
         "q": "What are the system requirements?",
-        "a": "LiveWalls requires macOS 15 (Sequoia) or later. It runs on Apple Silicon and Intel. Live Lock Screen and Screen Saver motion require macOS 26 (Tahoe) or later."
+        "a": "MacFlow requires macOS 15 (Sequoia) or later. It runs on Apple Silicon and Intel. Live Lock Screen and Screen Saver motion require macOS 26 (Tahoe) or later."
       },
       "battery": {
         "q": "How does the app affect battery life?",
@@ -351,7 +352,7 @@
     "statusRefunded": "Refunded",
     "download": "Download",
     "mockNotice": "Demo mode: sign-in, purchases and downloads are placeholders. See the README for wiring up the real API.",
-    "demoHint": "For the demo use email: demo@livewalls.app"
+    "demoHint": "For the demo use email: demo@macflow.app"
   },
   "admin": {
     "title": "Admin",
@@ -394,8 +395,8 @@
   },
   "errors": {
     "notFoundTitle": "Page not found",
-    "notFoundBody": "The link may be outdated or there is a typo in the address. Head back to the catalog — it has 34 live wallpapers.",
-    "notFoundCta": "To the catalog",
+    "notFoundBody": "The link may be outdated or there is a typo in the address. Head back home — MacFlow live wallpapers are waiting there.",
+    "notFoundCta": "View wallpapers",
     "errorTitle": "Something broke",
     "errorBody": "We already know about the issue. Try reloading the page — it may help.",
     "errorCta": "Reload the page",
@@ -403,7 +404,7 @@
     "code": "Error code"
   },
   "onboarding": {
-    "step1Title": "Welcome to LiveWalls",
+    "step1Title": "Welcome to MacFlow",
     "step1Body": "Live wallpapers for macOS: video on your desktop, Lock Screen and Screen Saver. Here is how it all works.",
     "step2Title": "Pick a theme",
     "step2Body": "The site works in both dark and light themes. Your choice is stored in the browser.",
@@ -418,7 +419,7 @@
     "finish": "Get started"
   },
   "download": {
-    "title": "Download LiveWalls",
+    "title": "Download MacFlow",
     "subtitle": "The macOS 15+ app. The first 24 hours are free.",
     "button": "Download for macOS",
     "universal": "Universal build (Apple Silicon and Intel)",
@@ -433,7 +434,7 @@
     "freeSpace": "300 MB of free space",
     "stepsTitle": "Installation in a minute",
     "step1": "Download the .dmg file",
-    "step2": "Open it and drag LiveWalls into Applications",
+    "step2": "Open it and drag MacFlow into Applications",
     "step3": "Launch the app from the menu bar and pick a wallpaper",
     "faqTitle": "What happens next?",
     "faqBody": "After installation you get a 24-hour trial: the full catalog, live Lock Screen wallpapers and the Bend effect. No account required.",
@@ -452,7 +453,8 @@
     "rights": "All rights reserved.",
     "inn": "INN",
     "ogrnip": "OGRNIP",
-    "consent": "Consent to PD processing"
+    "consent": "Consent to PD processing",
+    "credit": "a simple, macOS-native app designed with care."
   },
   "toast": {
     "paymentSoon": "Payments are coming soon",
@@ -467,5 +469,134 @@
     "adminActionBody": "This is a placeholder — real CRUD operations appear once the API is connected.",
     "copied": "Copied",
     "linkCopied": "Link copied to clipboard"
+  },
+  "landing": {
+    "hero": {
+      "title": "MacFlow",
+      "tagline": "Live Wallpaper for Mac",
+      "description": "The live wallpaper app for Mac that won't touch your battery.",
+      "descriptionSecond": "Lock Screen support, native Swift — no subscription, low CPU, no login.",
+      "download": "Download for macOS",
+      "watchDemo": "Watch Demo",
+      "noSubscriptions": "No subscriptions. Install via",
+      "homebrew": "Homebrew",
+      "requires": "Requires macOS 15.0 or later.",
+      "copyCommand": "Copy install command",
+      "copied": "Copied",
+      "unlock": "Click to unlock",
+      "notificationTitle": "MacFlow Supports Lock Screen",
+      "notificationBody": "Add live wallpapers to your lock screen.",
+      "personalFolder": "Personal Stuff",
+      "personalPopup": "Privacy Please 😭"
+    },
+    "demo": {
+      "label": "Demo",
+      "title": "Watch it in action",
+      "subtitle": "See MacFlow in motion: 4K live wallpapers on your Mac, built to stay light on CPU and battery."
+    },
+    "lockScreen": {
+      "label": "Lock Screen",
+      "title": "Customize Your Lock Screen",
+      "subtitle": "Personalize your Mac with stunning live wallpapers that extend to your lock screen."
+    },
+    "gallery": {
+      "label": "Gallery",
+      "title": "Wallpapers you'll love",
+      "subtitle": "A growing collection of cinematic live wallpapers, curated for quality and performance.",
+      "link": "Get all wallpapers in the app"
+    },
+    "stats": {
+      "label": "MacFlow Stats",
+      "title": "Built to feel alive",
+      "subtitle": "Real numbers from the app and the catalog.",
+      "items": {
+        "wallpapers": "4K wallpapers in the catalog",
+        "categories": "categories for every mood",
+        "resolution": "maximum resolution",
+        "trial": "hours of free trial"
+      }
+    },
+    "features": {
+      "label": "Features",
+      "title": "Everything you need.",
+      "titleAccent": "Nothing you don't.",
+      "subtitle": "MacFlow is engineered for performance, privacy, and simplicity."
+    },
+    "works": {
+      "label": "Works with",
+      "items": {
+        "macos": {
+          "name": "macOS 15+",
+          "note": "Sequoia & Tahoe"
+        },
+        "silicon": {
+          "name": "Apple Silicon",
+          "note": "M1–M4 native"
+        },
+        "displays": {
+          "name": "4K Displays",
+          "note": "Retina & external"
+        },
+        "multi": {
+          "name": "Multi-Monitor",
+          "note": "Per-screen wallpapers"
+        }
+      }
+    },
+    "testimonials": {
+      "label": "Loved by Users",
+      "title": "What people are saying",
+      "subtitle": "Impressions from people who use MacFlow every day.",
+      "items": {
+        "one": {
+          "text": "I've tried a lot of live wallpaper apps, but MacFlow is the first one that actually feels native to macOS. Clean UI, beautiful 4K wallpapers, and zero distractions like ads or sign-ups.",
+          "name": "Artem Kovalev",
+          "role": "iOS developer"
+        },
+        "two": {
+          "text": "I love that the catalog is small but every clip is genuinely high quality. The previews don't lie — what you see on the site is exactly what you get on your desktop. Bought Premium and never looked back.",
+          "name": "Marina Sokolova",
+          "role": "Designer"
+        },
+        "three": {
+          "text": "Set a moody “Rain at the window” loop as my desktop and my MacBook got quieter — the video is decoded through VideoToolbox instead of the CPU. The 24-hour trial was enough to decide.",
+          "name": "Igor Dementyev",
+          "role": "Student"
+        },
+        "four": {
+          "text": "Great curation and a clean interface. Prices in rubles are a nice touch. I would love more playlist control from the site, but the app handles that even better.",
+          "name": "Olga Veselova",
+          "role": "Video editor"
+        },
+        "five": {
+          "text": "Live wallpapers on the lock screen are something no built-in macOS tool can do. The app is stable on macOS 15 and the lid-fold animation looks stunning.",
+          "name": "Dmitry Orlov",
+          "role": "System administrator"
+        },
+        "six": {
+          "text": "Being able to import my own clips matters. I build playlists for every mood — rain, sunset, city — and the app is remarkably gentle on the battery.",
+          "name": "Alina Nesterova",
+          "role": "Photographer"
+        }
+      }
+    },
+    "laptop": {
+      "alt": "MacFlow running on a MacBook"
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Questions?",
+      "titleAccent": "We've got answers."
+    },
+    "cta": {
+      "title": "Ready to transform",
+      "titleAccent": "your Mac experience?",
+      "description": "Join thousands of Mac users enjoying cinematic live wallpapers. Download free and get started in seconds.",
+      "download": "Download for macOS",
+      "watchDemo": "Watch Demo",
+      "trust1": "No login required",
+      "trust2": "24-hour free trial",
+      "trust3": "macOS 15.0+"
+    }
   }
 }

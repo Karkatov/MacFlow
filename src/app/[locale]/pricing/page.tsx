@@ -28,7 +28,7 @@ export async function generateMetadata({
     description: t('subtitle'),
     path: '/pricing',
     locale,
-    keywords: ['LiveWalls цена', 'премиум LiveWalls', 'live walls price'],
+    keywords: ['MacFlow цена', 'премиум MacFlow', 'macflow price'],
   });
 }
 

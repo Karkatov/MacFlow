@@ -42,6 +42,6 @@ export const useCartStore = create<CartState>()(
       total: () => get().items.reduce((sum, item) => sum + item.price, 0),
       count: () => get().items.length,
     }),
-    { name: 'livewalls:cart' },
+    { name: 'macflow:cart' },
   ),
 );

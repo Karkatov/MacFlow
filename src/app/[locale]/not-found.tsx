@@ -22,7 +22,7 @@ export default function LocaleNotFound() {
         action={
           <div className="flex flex-col gap-2 sm:flex-row">
             <Button asChild variant="gradient">
-              <Link href="/wallpapers">
+              <Link href="/#gallery">
                 {t('notFoundCta')}
                 <ArrowRight className="size-4" />
               </Link>

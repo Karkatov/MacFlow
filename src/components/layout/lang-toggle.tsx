@@ -1,13 +1,11 @@
 'use client';
 
-import { Languages } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/navigation';
-import { Button } from '@/components/ui/button';
 
 /**
- * Переключатель языка RU ↔ EN.
- * Путь сохраняется: /ru/wallpapers → /en/wallpapers.
+ * Переключатель языка RU ↔ EN. Путь сохраняется.
+ * Оформлен как обычная ссылка шапки, чтобы совпадать с референсом.
  */
 export function LangToggle() {
   const t = useTranslations('nav');
@@ -21,15 +19,17 @@ export function LangToggle() {
   };
 
   return (
-    <Button
-      variant="ghost"
-      size="sm"
-      className="text-foreground/80 w-[68px] justify-center gap-1.5 px-0"
+    <button
+      type="button"
+      className="header-nav-link"
       aria-label={t('language')}
       onClick={toggleLocale}
     >
-      <Languages className="size-4" />
-      <span className="text-xs font-semibold uppercase">{locale}</span>
-    </Button>
+      {locale.toUpperCase()}
+      <span aria-hidden="true" style={{ opacity: 0.4 }}>
+        /
+      </span>
+      {locale === 'ru' ? 'EN' : 'RU'}
+    </button>
   );
 }

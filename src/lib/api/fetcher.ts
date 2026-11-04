@@ -9,7 +9,7 @@ import { siteConfig } from '@/config/site';
  *
  * Чтобы подключить боевой API, достаточно:
  *  1) задать `NEXT_PUBLIC_USE_MOCK_DATA=false`;
- *  2) прописать `NEXT_PUBLIC_API_BASE_URL=https://api.livewalls.app`;
+ *  2) прописать `NEXT_PUBLIC_API_BASE_URL=https://api.macflow.app`;
  *  3) реализовать эндпоинты из TODO.md.
  * Код страниц при этом не меняется.
  */

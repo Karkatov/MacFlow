@@ -5,7 +5,7 @@ export const mockPurchases: Purchase[] = [
   {
     id: 'pay-1',
     userId: 'u-1',
-    email: 'demo@livewalls.app',
+    email: 'demo@macflow.app',
     itemType: 'subscription',
     itemId: 'premium-lifetime',
     itemTitle: 'Premium — навсегда',

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" fill="none">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8eaee"/>
+      <stop offset="0.5" stop-color="#c9ccd2"/>
+      <stop offset="1" stop-color="#a7abb2"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9dce1"/>
+      <stop offset="1" stop-color="#9ea3aa"/>
+    </linearGradient>
+    <linearGradient id="bez" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2c31"/>
+      <stop offset="1" stop-color="#151619"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="url(#bez)"
+      d="M110 10a10 10 0 0 1 10-10h1040a10 10 0 0 1 10 10v680H110V10zm24 0h1012v672H134V10z"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="url(#body)"
+      d="M104 0h1072a16 16 0 0 1 16 16v674H88V16A16 16 0 0 1 104 0zm16 8h1040v674H120V8z"/>
+    <rect x="0" y="690" width="1280" height="92" rx="24" fill="url(#base)"/>
+    <path d="M0 738h1280v20a24 24 0 0 1-24 24H24A24 24 0 0 1 0 758z" fill="#8f949b"/>
+    <path d="M548 702h184a10 10 0 0 1 0 20H548a10 10 0 0 1 0-20z" fill="#b6bac0" opacity=".9"/>
+    <path d="M560 712h160" stroke="#7f858d" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

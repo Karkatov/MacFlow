@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="168" height="40" viewBox="0 0 168 40">
-    <defs>
-      <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#7C5CFF"/>
-        <stop offset="50%" stop-color="#6366F1"/>
-        <stop offset="100%" stop-color="#22D3EE"/>
-      </linearGradient>
-    </defs>
-    <rect x="2" y="2" width="36" height="36" rx="11" fill="url(#lg)"/>
-    <path d="M17 12 L29 20 L17 28 Z" fill="#0A0A0C" opacity="0.88"/>
-    <text x="50" y="26" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="19" font-weight="700" fill="#F5F5F7">Live<tspan fill="#7C5CFF">Walls</tspan></text>
-  </svg>
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6e8efa"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="36" height="36" rx="11" fill="url(#lg)"/>
+  <path d="M12 28V15c0-1 1.2-1.8 2.1-1.1L20 19l5.9-5.1C26.8 13.2 28 14 28 15v13" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="50" y="26" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="19" font-weight="700" fill="#F5F5F7">Mac<tspan fill="#8fa8ff">Flow</tspan></text>
+</svg>

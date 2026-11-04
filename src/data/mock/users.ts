@@ -5,7 +5,7 @@ import { cdnUrl } from '@/config/site';
 export const mockUsers: User[] = [
   {
     id: 'u-1',
-    email: 'demo@livewalls.app',
+    email: 'demo@macflow.app',
     name: 'Демо Пользователь',
     avatar: cdnUrl('/placeholders/avatars/avatar-01.svg'),
     createdAt: '2026-06-01T09:00:00.000Z',
@@ -15,7 +15,7 @@ export const mockUsers: User[] = [
   },
   {
     id: 'u-2',
-    email: 'trial@livewalls.app',
+    email: 'trial@macflow.app',
     name: 'Пробный пользователь',
     avatar: cdnUrl('/placeholders/avatars/avatar-03.svg'),
     createdAt: '2026-10-15T09:00:00.000Z',
@@ -25,7 +25,7 @@ export const mockUsers: User[] = [
   },
   {
     id: 'u-3',
-    email: 'expired@livewalls.app',
+    email: 'expired@macflow.app',
     name: 'Истёкший триал',
     avatar: cdnUrl('/placeholders/avatars/avatar-05.svg'),
     createdAt: '2026-05-12T09:00:00.000Z',

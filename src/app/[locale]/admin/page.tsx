@@ -9,7 +9,7 @@ import { AdminPanel } from '@/components/admin/admin-panel';
 import { Reveal } from '@/components/shared/motion';
 
 /** Демо-пароль, если переменная окружения не задана. */
-const FALLBACK_PASSWORD = 'livewalls-admin';
+const FALLBACK_PASSWORD = 'macflow-admin';
 
 /** SHA-256 от пароля — на клиент уходит только хеш, а не сам пароль. */
 function hashPassword(password: string): string {

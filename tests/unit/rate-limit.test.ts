@@ -48,7 +48,7 @@ describe('rate limiting', () => {
   });
 
   it('возвращает 429 с Retry-After через guardRateLimit', () => {
-    const request = new Request('https://livewalls.app/api/wallpapers', {
+    const request = new Request('https://macflow.app/api/wallpapers', {
       headers: { 'x-forwarded-for': '4.4.4.4, 10.0.0.1' },
     });
 
@@ -63,7 +63,7 @@ describe('rate limiting', () => {
   it('извлекает IP из заголовков прокси и CDN', () => {
     expect(
       getClientIp(
-        new Request('https://livewalls.app', {
+        new Request('https://macflow.app', {
           headers: { 'cf-connecting-ip': '5.5.5.5' },
         }),
       ),
@@ -71,7 +71,7 @@ describe('rate limiting', () => {
 
     expect(
       getClientIp(
-        new Request('https://livewalls.app', {
+        new Request('https://macflow.app', {
           headers: { 'x-forwarded-for': '6.6.6.6, 10.0.0.1' },
         }),
       ),
@@ -79,7 +79,7 @@ describe('rate limiting', () => {
 
     expect(
       getClientIp(
-        new Request('https://livewalls.app', {
+        new Request('https://macflow.app', {
           headers: { 'x-real-ip': '7.7.7.7' },
         }),
       ),

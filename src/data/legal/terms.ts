@@ -6,13 +6,13 @@ export const termsOfUse: Record<Locale, LegalDocument> = {
     title: 'Условия использования',
     updatedAt: '2026-10-01',
     intro:
-      'Условия регулируют использование сайта livewalls.app и приложения LiveWalls для macOS. Продолжая использование, вы принимаете эти условия.',
+      'Условия регулируют использование сайта macflow.app и приложения MacFlow для macOS. Продолжая использование, вы принимаете эти условия.',
     sections: [
       {
         id: 'subject',
         title: '1. Предмет договора',
         paragraphs: [
-          'Исполнитель предоставляет право использования программного обеспечения LiveWalls (далее — Программа) на условиях настоящих Условий и Публичной оферты.',
+          'Исполнитель предоставляет право использования программного обеспечения MacFlow (далее — Программа) на условиях настоящих Условий и Публичной оферты.',
           'Программа распространяется в виде триала (24 часа) и платных версий: Premium навсегда и Premium на год.',
         ],
       },
@@ -68,7 +68,7 @@ export const termsOfUse: Record<Locale, LegalDocument> = {
       {
         id: 'contacts',
         title: '8. Контакты',
-        paragraphs: ['Вопросы по настоящим Условиям: hello@livewalls.app.'],
+        paragraphs: ['Вопросы по настоящим Условиям: hello@macflow.app.'],
       },
     ],
   },
@@ -76,13 +76,13 @@ export const termsOfUse: Record<Locale, LegalDocument> = {
     title: 'Terms of use',
     updatedAt: '2026-10-01',
     intro:
-      'These terms govern the use of livewalls.app and the LiveWalls macOS application. By continuing to use the service you accept these terms.',
+      'These terms govern the use of macflow.app and the MacFlow macOS application. By continuing to use the service you accept these terms.',
     sections: [
       {
         id: 'subject',
         title: '1. Subject of the agreement',
         paragraphs: [
-          'The Service Provider grants the right to use the LiveWalls software (the "Application") subject to these Terms and the Public Offer.',
+          'The Service Provider grants the right to use the MacFlow software (the "Application") subject to these Terms and the Public Offer.',
           'The Application is distributed as a free trial (24 hours) and as paid versions: Premium forever and Premium for a year.',
         ],
       },
@@ -138,7 +138,7 @@ export const termsOfUse: Record<Locale, LegalDocument> = {
       {
         id: 'contacts',
         title: '8. Contacts',
-        paragraphs: ['Questions about these terms: hello@livewalls.app.'],
+        paragraphs: ['Questions about these terms: hello@macflow.app.'],
       },
     ],
   },

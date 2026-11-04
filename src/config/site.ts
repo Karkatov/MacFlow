@@ -18,16 +18,16 @@ export type PaymentProvider = 'none' | 'lava' | 'robokassa';
 const paymentProvider = (process.env.NEXT_PUBLIC_PAYMENT_PROVIDER ?? 'none') as PaymentProvider;
 
 export const siteConfig = {
-  name: 'LiveWalls',
+  name: 'MacFlow',
   tagline: 'Живые обои для macOS',
-  domain: 'livewalls.app',
+  domain: 'macflow.app',
   locale: 'ru-RU',
   defaultLocale: 'ru',
   supportedLocales: ['ru', 'en'] as const,
 
   // ─── Данные и инфраструктура ───────────────────────────────
   USE_MOCK_DATA,
-  /** TODO: подключить API (бэкенд LiveWalls). Пусто = работаем на моках. */
+  /** TODO: подключить API (бэкенд MacFlow). Пусто = работаем на моках. */
   API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL ?? '',
   /** TODO: подключить S3 (Timeweb). Путь: {S3_BASE_URL}/wallpapers/{id}.mp4 */
   S3_BASE_URL: process.env.NEXT_PUBLIC_S3_BASE_URL ?? '',
@@ -52,8 +52,8 @@ export const siteConfig = {
 
   // ─── Контакты ──────────────────────────────────────────────
   CONTACTS: {
-    email: 'hello@livewalls.app',
-    telegram: '@livewalls',
+    email: 'hello@macflow.app',
+    telegram: '@macflow',
   },
 
   // ─── Реквизиты (ПЛЕЙСХОЛДЕРЫ — заполнить перед публикацией) ─
@@ -61,19 +61,19 @@ export const siteConfig = {
     inn: '000000000000',
     ogrnip: '000000000000000',
     address: 'г. Москва, ул. Примерная, д. 1',
-    email: 'hello@livewalls.app',
+    email: 'hello@macflow.app',
   },
 
   // ─── Приложение ────────────────────────────────────────────
   APP: {
-    name: 'LiveWalls',
-    bundleId: 'com.livewalls.app',
+    name: 'MacFlow',
+    bundleId: 'com.macflow.app',
     version: '1.0.0',
     minMacOS: '15.0',
     /** Live Lock Screen и заставка требуют macOS 26 (Tahoe) */
     minMacOSAdvanced: '26.0',
-    downloadUrl: '/download/LiveWalls.dmg',
-    downloadUrlUniversal: '/download/LiveWalls-universal.dmg',
+    downloadUrl: '/download/MacFlow.dmg',
+    downloadUrlUniversal: '/download/MacFlow-universal.dmg',
   },
 } as const;
 
@@ -112,7 +112,7 @@ export function cdnUrl(path: string): string {
 
 /** Навигация в шапке сайта. */
 export const navLinks = [
-  { href: '/wallpapers', labelKey: 'wallpapers' },
+  { href: '/', labelKey: 'home' },
   { href: '/pricing', labelKey: 'pricing' },
   { href: '/about', labelKey: 'about' },
   { href: '/faq', labelKey: 'faq' },
@@ -135,4 +135,4 @@ export const pricing = {
 export const PAGE_SIZE = 12;
 
 /** Ключ в localStorage: онбординг уже показан. */
-export const ONBOARDING_STORAGE_KEY = 'livewalls:onboarding-seen';
+export const ONBOARDING_STORAGE_KEY = 'macflow:onboarding-seen';

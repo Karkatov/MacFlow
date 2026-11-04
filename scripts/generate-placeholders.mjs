@@ -366,7 +366,7 @@ for (let i = 1; i <= 6; i += 1) {
 }
 
 const screens = [
-  ['app-main.svg', 'LiveWalls — главное окно', 'main'],
+  ['app-main.svg', 'MacFlow — главное окно', 'main'],
   ['app-player.svg', 'Плеер и плейлисты', 'player'],
   ['app-catalog.svg', 'Каталог обоев', 'catalog'],
   ['app-bend.svg', 'Эффект Bend', 'bend'],
@@ -424,8 +424,8 @@ written.push(join(publicDir, 'og', 'og-default.png'));
 
 // Манифест
 const manifest = {
-  name: 'LiveWalls — живые обои для macOS',
-  short_name: 'LiveWalls',
+  name: 'MacFlow — живые обои для macOS',
+  short_name: 'MacFlow',
   description: 'Живые обои для macOS: рабочий стол, экран блокировки и заставка.',
   start_url: '/ru',
   scope: '/',

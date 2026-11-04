@@ -4,6 +4,12 @@ const PORT = Number(process.env.E2E_PORT ?? 3210);
 const baseURL = `http://127.0.0.1:${PORT}`;
 
 /**
+ * Дополнительные флаги Chromium для окружений с ограничениями (контейнеры,
+ * sandbox-сессии). В обычном окружении переменная не задана и запуск штатный.
+ */
+const chromiumArgs = (process.env.E2E_CHROMIUM_ARGS ?? '').split(/\s+/).filter(Boolean);
+
+/**
  * E2E-тесты (Playwright).
  *
  * Собирается продакшен-версия — так проверяется именно то, что уедет на хостинг.
@@ -24,7 +30,10 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        launchOptions: { args: chromiumArgs },
+      },
     },
   ],
   webServer: {

@@ -58,7 +58,12 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
   return (
     <div className="mx-auto max-w-[1200px] px-4 py-12 sm:px-6 lg:py-16">
-      <SectionHeading eyebrow={t('title')} title={t('subtitle')} description={t('whatBody')} />
+      <SectionHeading
+        level={1}
+        eyebrow={t('title')}
+        title={t('subtitle')}
+        description={t('whatBody')}
+      />
 
       {/* Скриншоты */}
       <section className="mt-16">

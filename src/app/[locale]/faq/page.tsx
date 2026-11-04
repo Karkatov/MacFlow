@@ -38,7 +38,7 @@ export async function generateMetadata({
     description: t('subtitle'),
     path: '/faq',
     locale,
-    keywords: ['вопросы о LiveWalls', 'LiveWalls FAQ', 'как установить LiveWalls'],
+    keywords: ['вопросы о MacFlow', 'MacFlow FAQ', 'как установить MacFlow'],
   });
 }
 

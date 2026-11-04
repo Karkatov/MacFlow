@@ -26,10 +26,7 @@ export function generateStaticParams() {
 }
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: dark)', color: '#0A0A0C' },
-    { media: '(prefers-color-scheme: light)', color: '#F8FAFC' },
-  ],
+  themeColor: [{ media: '(prefers-color-scheme: dark)', color: '#111113' }],
   width: 'device-width',
   initialScale: 1,
   viewportFit: 'cover',
@@ -76,10 +73,11 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Moscow">
           <ThemeProvider
             attribute="class"
-            defaultTheme="light"
-            enableSystem
+            defaultTheme="dark"
+            forcedTheme="dark"
+            enableSystem={false}
             disableTransitionOnChange
-            storageKey="livewalls:theme"
+            storageKey="macflow:theme"
           >
             <TooltipProvider delayDuration={200} skipDelayDuration={300}>
               <div className="relative flex min-h-dvh flex-col">
@@ -92,7 +90,7 @@ export default async function LocaleLayout({
 
                 <Header />
 
-                <main id="main" className="flex-1 pt-16">
+                <main id="main" className="flex-1">
                   <PageTransition>{children}</PageTransition>
                 </main>
 

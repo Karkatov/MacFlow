@@ -1,21 +1,20 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { ArrowRight } from 'lucide-react';
 import { routing, type Locale } from '@/i18n/routing';
-import { Link } from '@/i18n/navigation';
 import { buildMetadata } from '@/lib/seo/metadata';
-import { getFeaturedWallpapers, getCategories } from '@/lib/api/wallpapers';
-import { mockReviews } from '@/data/mock/reviews';
-import { Button } from '@/components/ui/button';
-import { SectionHeading } from '@/components/shared/section-heading';
-import { Reveal } from '@/components/shared/motion';
-import { Hero } from '@/components/home/hero';
-import { FeaturedWallpapers } from '@/components/home/featured-wallpapers';
-import { CategoriesGrid } from '@/components/home/categories-grid';
-import { FeaturesGrid } from '@/components/home/features-grid';
-import { Reviews } from '@/components/home/reviews';
-import { CtaBanner } from '@/components/home/cta-banner';
-import { FaqAccordion } from '@/components/faq/faq-accordion';
+import { demoMedia, galleryItems, heroMedia } from '@/lib/media/library';
+import { LockScreenHero } from '@/components/home/lock-screen-hero';
+import { DemoSection } from '@/components/home/demo-section';
+import { LockScreenSection } from '@/components/home/lock-screen-section';
+import { GalleryMarquee } from '@/components/home/gallery-marquee';
+import { StatsSection } from '@/components/home/stats-section';
+import { FeaturesSection } from '@/components/home/features-section';
+import { WorksWithSection } from '@/components/home/works-with-section';
+import { TestimonialsSection } from '@/components/home/testimonials-section';
+import { LaptopSection } from '@/components/home/laptop-section';
+import { FaqSection, type FaqItem } from '@/components/home/faq-section';
+import { CtaSection } from '@/components/home/cta-section';
+import { RevealProvider } from '@/components/home/reveal-provider';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -27,12 +26,12 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'home.hero' });
+  const t = await getTranslations({ locale, namespace: 'landing.hero' });
   const tMeta = await getTranslations({ locale, namespace: 'meta' });
 
   return buildMetadata({
     title: tMeta('siteTitle'),
-    description: t('subtitle'),
+    description: t('description'),
     path: '/',
     locale,
   });
@@ -42,49 +41,33 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations('home.faq');
   const tFaq = await getTranslations('faq.items');
 
-  const [featured, categories] = await Promise.all([getFeaturedWallpapers(6), getCategories()]);
-
-  const faqItems = (['trial', 'system', 'battery', 'license', 'payment'] as const).map((key) => ({
+  const faqItems: FaqItem[] = (
+    ['trial', 'system', 'battery', 'bends', 'license', 'import'] as const
+  ).map((key) => ({
     id: key,
     question: tFaq(`${key}.q`),
     answer: tFaq(`${key}.a`),
   }));
 
+  const folders = galleryItems();
+  const demoHref = demoMedia?.src ?? null;
+
   return (
     <>
-      <Hero />
-
-      <FeaturedWallpapers wallpapers={featured} />
-
-      <CategoriesGrid categories={categories} />
-
-      <FeaturesGrid />
-
-      <Reviews reviews={mockReviews} />
-
-      <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:py-24">
-        <SectionHeading eyebrow={t('eyebrow')} title={t('title')} description={t('description')} />
-
-        <Reveal>
-          <div className="border-border/50 bg-card/30 mt-10 rounded-2xl border px-5 py-2 backdrop-blur-xl sm:px-7">
-            <FaqAccordion items={faqItems} />
-          </div>
-        </Reveal>
-
-        <div className="mt-8 text-center">
-          <Button asChild variant="outline">
-            <Link href="/faq">
-              {t('cta')}
-              <ArrowRight className="size-4" />
-            </Link>
-          </Button>
-        </div>
-      </section>
-
-      <CtaBanner />
+      <LockScreenHero heroMedia={heroMedia} folders={folders} demoHref={demoHref} />
+      <DemoSection />
+      <LockScreenSection />
+      <GalleryMarquee />
+      <StatsSection />
+      <FeaturesSection />
+      <WorksWithSection />
+      <TestimonialsSection />
+      <LaptopSection />
+      <FaqSection items={faqItems} />
+      <CtaSection demoHref={demoHref} />
+      <RevealProvider />
     </>
   );
 }

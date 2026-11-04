@@ -1,18 +1,14 @@
-import { Inter } from 'next/font/google';
-
 /**
  * Шрифты сайта.
  *
- * Современный геометрический гротеск — Inter. Чистый, чёткий,
- * хорошо держит крупные заголовки.
+ * Сборка должна работать офлайн (без обращения к Google Fonts), поэтому мы
+ * не используем `next/font/google`. Сайт опирается на системный гротеск:
+ * SF Pro на macOS, Segoe UI на Windows и Roboto на Android. Если Inter
+ * установлен в системе — он подхватится первым (см. `--font-sans` в globals).
+ *
+ * Здесь остаётся точка расширения: положите woff2-файлы в `public/fonts`
+ * и переключитесь на `next/font/local`, если понадобится гарантированный Inter.
  */
 
-/** Основной sans — текст, UI, кнопки, заголовки. */
-export const sans = Inter({
-  subsets: ['latin', 'cyrillic'],
-  display: 'swap',
-  variable: '--font-sans-ui',
-});
-
-/** Классы для `<html>`: подключают CSS-переменные шрифтов. */
-export const fontClasses = `${sans.variable}`;
+/** Классы для `<html>`. Сейчас дополнительных классов не требуется. */
+export const fontClasses = '';

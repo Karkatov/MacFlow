@@ -22,6 +22,7 @@ const eslintConfig = [
       'playwright-report/**',
       'test-results/**',
       'next-env.d.ts',
+      'wallspace.appx/**',
     ],
   },
   ...compat.extends('next/core-web-vitals', 'next/typescript', 'prettier'),

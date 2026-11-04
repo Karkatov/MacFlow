@@ -15,15 +15,15 @@ interface MemoryCacheEntry {
 }
 
 const globalForCache = globalThis as unknown as {
-  __livewallsMemoryCache?: Map<string, MemoryCacheEntry>;
+  __macflowMemoryCache?: Map<string, MemoryCacheEntry>;
 };
 
 /** Жёсткий предел числа ключей: защита от неограниченного роста памяти. */
 const MAX_ENTRIES = 5_000;
 
 function getStore(): Map<string, MemoryCacheEntry> {
-  globalForCache.__livewallsMemoryCache ??= new Map();
-  return globalForCache.__livewallsMemoryCache;
+  globalForCache.__macflowMemoryCache ??= new Map();
+  return globalForCache.__macflowMemoryCache;
 }
 
 function sweep(store: Map<string, MemoryCacheEntry>, now: number): void {

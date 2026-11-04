@@ -106,7 +106,7 @@ export async function defaultMetadata(locale: Locale = routing.defaultLocale): P
     metadataBase: new URL(BASE_URL),
     title: {
       default: siteTitle,
-      template: '%s · LiveWalls',
+      template: '%s · MacFlow',
     },
     description: siteDescription,
     applicationName: siteConfig.name,

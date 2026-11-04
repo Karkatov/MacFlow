@@ -3,7 +3,7 @@ import { mediaUrl } from '@/config/site';
 import { mockWallpapers } from './wallpapers';
 
 /**
- * Категории обоев. Состав совпадает с `WallpaperCategory` в приложении LiveWalls
+ * Категории обоев. Состав совпадает с `WallpaperCategory` в приложении MacFlow
  * (служебные All/Stills на сайт не выводятся).
  */
 const CATEGORY_DEFS: ReadonlyArray<Omit<Category, 'count' | 'poster'>> = [

@@ -18,7 +18,7 @@ import { useCart } from '@/lib/hooks/use-cart';
  * в `src/lib/api/payments.ts` и добавить редирект на `paymentUrl`.
  *
  * TODO(бэкенд): выдача лицензионного ключа после оплаты, проверка ключа
- * в приложении LiveWalls, промокоды и реферальная программа.
+ * в приложении MacFlow, промокоды и реферальная программа.
  */
 export function BuyButton({
   kind,

@@ -11,15 +11,15 @@ import { useEffect, useState } from 'react';
 const COPY = {
   ru: {
     title: 'Страница не найдена',
-    body: 'Возможно, ссылка устарела или в адресе опечатка. Вернитесь в каталог — там 34 живых обоев.',
-    cta: 'В каталог',
+    body: 'Возможно, ссылка устарела или в адресе опечатка. Вернитесь на главную — там живые обои MacFlow.',
+    cta: 'Смотреть обои',
     home: 'На главную',
     code: 'Код ошибки: 404',
   },
   en: {
     title: 'Page not found',
-    body: 'The link may be outdated or there is a typo in the address. Head back to the catalog — it has 34 live wallpapers.',
-    cta: 'To the catalog',
+    body: 'The link may be outdated or there is a typo in the address. Head back home — MacFlow live wallpapers are waiting there.',
+    cta: 'View wallpapers',
     home: 'Go home',
     code: 'Error code: 404',
   },
@@ -57,7 +57,7 @@ export default function GlobalNotFound() {
               fontSize: '0.8rem',
               letterSpacing: '0.16em',
               textTransform: 'uppercase',
-              color: '#7C5CFF',
+              color: '#6e8efa',
             }}
           >
             {t.code}
@@ -73,11 +73,11 @@ export default function GlobalNotFound() {
             style={{ marginTop: '2rem', display: 'flex', gap: '0.75rem', justifyContent: 'center' }}
           >
             <a
-              href={`${prefix}/wallpapers`}
+              href={`${prefix}/#gallery`}
               style={{
                 padding: '0.75rem 1.5rem',
                 borderRadius: '999px',
-                background: 'linear-gradient(120deg, #7C5CFF, #22D3EE)',
+                background: 'linear-gradient(120deg, #6e8efa, #a78bfa)',
                 color: '#fff',
                 fontSize: '0.9rem',
                 textDecoration: 'none',

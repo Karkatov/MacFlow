@@ -13,6 +13,7 @@ export function SectionHeading({
   align = 'center',
   className,
   action,
+  level = 2,
 }: {
   eyebrow?: string;
   title: string;
@@ -20,7 +21,11 @@ export function SectionHeading({
   align?: 'center' | 'left';
   className?: string;
   action?: React.ReactNode;
+  /** Уровень заголовка: 1 — для главного заголовка страницы. */
+  level?: 1 | 2;
 }) {
+  const HeadingTag = level === 1 ? 'h1' : 'h2';
+
   return (
     <Reveal
       className={cn(
@@ -35,9 +40,9 @@ export function SectionHeading({
         </span>
       ) : null}
 
-      <h2 className="text-foreground text-display-md max-w-3xl">
+      <HeadingTag className="text-foreground text-display-md max-w-3xl">
         <MaskReveal>{title}</MaskReveal>
-      </h2>
+      </HeadingTag>
 
       {description ? (
         <p className="text-muted-foreground text-lead max-w-2xl">{description}</p>

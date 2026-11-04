@@ -1,8 +1,8 @@
 /**
  * Типы обоев.
  *
- * Структура — объединение моделей приложения LiveWalls
- * (`Sources/LiveWalls/Models/WallpaperItem.swift`) и публичного API каталога.
+ * Структура — объединение моделей приложения MacFlow
+ * (`Sources/MacFlow/Models/WallpaperItem.swift`) и публичного API каталога.
  * Благодаря общей схеме сайт и приложение смогут обмениваться данными
  * без конвертации.
  */
@@ -95,7 +95,7 @@ export interface WallpaperFilters {
 
 export type WallpaperSort = 'newest' | 'popular' | 'price-asc' | 'price-desc' | 'name';
 
-/** Универсальная пагинированная обёртка (совпадает с ответом API LiveWalls). */
+/** Универсальная пагинированная обёртка (совпадает с ответом API MacFlow). */
 export interface Paginated<T> {
   items: T[];
   total: number;

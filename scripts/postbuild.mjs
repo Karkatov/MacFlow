@@ -75,7 +75,7 @@ if (outputMode === 'export') {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LiveWalls</title>
+    <title>MacFlow</title>
     <meta http-equiv="refresh" content="0; url=${target}" />
     <link rel="canonical" href="${target}" />
     <meta name="robots" content="noindex" />

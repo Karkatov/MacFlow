@@ -1,6 +1,6 @@
-# LiveWalls — сайт
+# MacFlow — сайт
 
-Промо-сайт приложения **LiveWalls** (живые обои для macOS): каталог обоев, тарифы,
+Промо-сайт приложения **MacFlow** (живые обои для macOS): каталог обоев, тарифы,
 страница загрузки, поддержка, личный кабинет и демо-админка.
 
 ## Стек
@@ -59,7 +59,7 @@ npm run dev                  # http://localhost:3000 → редирект на /
 npm run build                                   # статический экспорт → out/
 NEXT_OUTPUT=server npm run build                # серверный режим → .next
 NEXT_OUTPUT=standalone npm run build            # Docker → .next/standalone
-NEXT_OUTPUT=export NEXT_BASE_PATH=/LiveWallsSite NEXT_ASSET_PREFIX=/LiveWallsSite npm run build
+NEXT_OUTPUT=export NEXT_BASE_PATH=/MacFlowSite NEXT_ASSET_PREFIX=/MacFlowSite npm run build
 ```
 
 В режиме `export`:

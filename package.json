@@ -1,19 +1,23 @@
 {
-  "name": "livewalls-site",
+  "name": "macflow-site",
   "version": "0.1.0",
   "private": true,
-  "description": "Сайт-визитка LiveWalls — живые обои для macOS. Каталог, цены, личный кабинет.",
-  "author": "LiveWalls",
+  "description": "MacFlow — живые обои для macOS. Сайт с автозагружаемой галереей из папки wallpapers.",
+  "author": "MacFlow",
   "license": "UNLICENSED",
   "type": "module",
   "engines": {
     "node": ">=20.9.0"
   },
   "scripts": {
+    "predev": "npm run media",
     "dev": "next dev",
+    "prebuild": "npm run media",
     "build": "next build",
     "start": "next start",
     "postbuild": "node scripts/postbuild.mjs",
+    "media": "node scripts/sync-media.mjs",
+    "media:demo": "node scripts/generate-demo-media.mjs && node scripts/sync-media.mjs",
     "assets": "node scripts/generate-placeholders.mjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

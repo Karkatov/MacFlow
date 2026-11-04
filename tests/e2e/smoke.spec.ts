@@ -10,24 +10,18 @@ import { expect, test } from '@playwright/test';
  */
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => {
-    window.localStorage.setItem('livewalls:onboarding-seen', '1');
+    window.localStorage.setItem('macflow:onboarding-seen', '1');
   });
 });
 
-test.describe('LiveWalls', () => {
+test.describe('MacFlow', () => {
   test('главная открывается и содержит ключевые блоки', async ({ page }) => {
     await page.goto('/ru');
 
-    await expect(page).toHaveTitle(/LiveWalls/);
+    await expect(page).toHaveTitle(/MacFlow/);
     await expect(page.locator('h1').first()).toBeVisible();
-    await expect(page.getByRole('link', { name: /каталог/i }).first()).toBeVisible();
-  });
-
-  test('каталог показывает карточки обоев', async ({ page }) => {
-    await page.goto('/ru/wallpapers');
-
-    await expect(page.locator('article').first()).toBeVisible();
-    expect(await page.locator('article').count()).toBeGreaterThan(0);
+    await expect(page.getByRole('link', { name: /цены/i }).first()).toBeVisible();
+    await expect(page.locator('#gallery')).toBeVisible();
   });
 
   test('страница скачивания доступна', async ({ page }) => {
@@ -39,7 +33,7 @@ test.describe('LiveWalls', () => {
   test('английская версия отдаётся по /en', async ({ page }) => {
     await page.goto('/en');
 
-    await expect(page).toHaveTitle(/LiveWalls/);
+    await expect(page).toHaveTitle(/MacFlow/);
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   });
 
