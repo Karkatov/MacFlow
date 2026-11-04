@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-04T18:43:24.770Z",
+  "generatedAt": "2026-11-04T21:18:03.813Z",
   "counts": {
-    "images": 9,
+    "images": 8,
     "videos": 4,
     "showcase": 1
   },
@@ -13,14 +13,6 @@
       "src": "/media/images/demo-aurora.png",
       "poster": "/media/images/demo-aurora.png",
       "file": "demo-aurora.png"
-    },
-    {
-      "id": "demo-aurora-2",
-      "kind": "image",
-      "title": "Demo Aurora",
-      "src": "/media/images/demo-aurora.svg",
-      "poster": "/media/images/demo-aurora.svg",
-      "file": "demo-aurora.svg"
     },
     {
       "id": "demo-cosmos",
@@ -79,7 +71,7 @@
       "file": "demo-silk.svg"
     },
     {
-      "id": "demo-aurora-3",
+      "id": "demo-aurora-2",
       "kind": "video",
       "title": "Demo Aurora",
       "src": "/media/videos/demo-aurora.mp4",
@@ -121,7 +113,7 @@
     }
   ],
   "hero": {
-    "id": "demo-aurora-3",
+    "id": "demo-aurora-2",
     "kind": "video",
     "title": "Demo Aurora",
     "src": "/media/videos/demo-aurora.mp4",
