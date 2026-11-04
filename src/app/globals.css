@@ -32,10 +32,10 @@
   --brand-text-via: #6e8efa;
   --brand-text-to: #c4b5fd;
 
-  --background: #2b2b35;
-  --background-elevated: #353540;
+  --background: #111113;
+  --background-elevated: #18181b;
   --foreground: #f5f5f7;
-  --card: #262630;
+  --card: #212125;
   --card-foreground: #f5f5f7;
   --popover: #18181b;
   --popover-foreground: #f5f5f7;
@@ -243,7 +243,7 @@
     content: '';
     position: fixed;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity="0'/%3E%3C/svg%3E');
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E");
     background-size: 200px 200px;
     background-repeat: repeat;
     z-index: 1;
@@ -586,15 +586,4 @@
     animation-duration: 0s !important;
     animation-delay: 0s !important;
   }
-}
-
-/* MACFLOW PREMIUM GRAPHITE PALETTE */
-html.dark {
-  --bg-primary: #292a33;
-  --bg-secondary: #22232b;
-  --bg-surface: #30313b;
-  --background: #292a33;
-  --background-elevated: #383a46;
-  --card: #30313b;
-  --popover: #24252d;
 }
