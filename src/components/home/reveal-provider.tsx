@@ -1,63 +1,130 @@
 'use client';
 
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 /**
- * Включает scroll-reveal анимации из референса.
- * Элементы с data-animate / data-stagger-child появляются при попадании
- * во вьюпорт, с задержкой из data-animate-delay и шагом для stagger-групп.
+ * Единая система появления секций и stagger-элементов
+ * при прокрутке на всех страницах сайта.
  */
 export function RevealProvider() {
+  const pathname = usePathname();
+
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    const main = document.querySelector('main');
+    if (!main) return;
 
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const elements = new Set<Element>();
 
-    document.querySelectorAll('[data-animate]').forEach((el) => elements.add(el));
+    let observer: IntersectionObserver | null = null;
 
-    document.querySelectorAll('[data-stagger]').forEach((group) => {
-      const children = Array.from(group.querySelectorAll('[data-stagger-child]'));
-      children.forEach((child, index) => {
-        (child as HTMLElement).style.transitionDelay = reduce
-          ? '0ms'
-          : `${Math.min(index * 70, 420)}ms`;
-        elements.add(child);
+    if (!reduce) {
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            entry.target.classList.add('is-visible');
+            observer?.unobserve(entry.target);
+          });
+        },
+        {
+          rootMargin: '0px 0px -8% 0px',
+          threshold: 0.08,
+        },
+      );
+    }
+
+    const register = (element: Element) => {
+      const htmlElement = element as HTMLElement;
+
+      if (element.hasAttribute('data-animate-delay')) {
+        const delay = element.getAttribute('data-animate-delay');
+        if (delay) htmlElement.style.transitionDelay = `${delay}ms`;
+      }
+
+      if (element.hasAttribute('data-stagger-child')) {
+        const group = element.closest('[data-stagger]');
+
+        if (group) {
+          const children = Array.from(group.querySelectorAll('[data-stagger-child]'));
+          const index = children.indexOf(element);
+
+          htmlElement.style.transitionDelay = reduce ? '0ms' : `${Math.min(index * 70, 420)}ms`;
+        }
+      }
+
+      if (element.classList.contains('is-visible')) return;
+
+      if (reduce) {
+        element.classList.add('is-visible');
+        return;
+      }
+
+      const rect = element.getBoundingClientRect();
+
+      if (rect.top < window.innerHeight * 0.96) {
+        element.classList.add('is-visible');
+      } else {
+        observer?.observe(element);
+      }
+    };
+
+    const scan = (root: ParentNode) => {
+      // Автоматически анимируем только верхнеуровневые секции,
+      // не затрагивая вложенные секции и уже анимируемые блоки.
+      root.querySelectorAll('section').forEach((section) => {
+        if (section.hasAttribute('data-animate')) return;
+        if (section.parentElement?.closest('section')) return;
+        if (section.parentElement?.closest('[data-animate], .reveal-on-scroll')) {
+          return;
+        }
+
+        section.setAttribute('data-animate', 'auto');
+      });
+
+      const elements = new Set<Element>();
+
+      if (root instanceof Element) {
+        if (root.matches('[data-animate], [data-stagger-child]')) {
+          elements.add(root);
+        }
+      }
+
+      root
+        .querySelectorAll('[data-animate], [data-stagger-child]')
+        .forEach((element) => elements.add(element));
+
+      elements.forEach(register);
+
+      root.querySelectorAll('[data-stagger]').forEach((group) => {
+        group.querySelectorAll('[data-stagger-child]').forEach(register);
+      });
+    };
+
+    scan(main);
+
+    // Отслеживаем новые элементы при переходах и динамическом рендеринге.
+    const mutationObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node instanceof Element) {
+            scan(node);
+          }
+        });
       });
     });
 
-    document.querySelectorAll('[data-animate-delay]').forEach((el) => {
-      const delay = el.getAttribute('data-animate-delay');
-      if (delay) (el as HTMLElement).style.transitionDelay = `${delay}ms`;
+    mutationObserver.observe(main, {
+      childList: true,
+      subtree: true,
     });
 
-    if (reduce) {
-      elements.forEach((el) => el.classList.add('is-visible'));
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        });
-      },
-      { rootMargin: '0px 0px -8% 0px', threshold: 0.08 },
-    );
-
-    elements.forEach((el) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight * 0.96) {
-        el.classList.add('is-visible');
-      } else {
-        observer.observe(el);
-      }
-    });
-
-    return () => observer.disconnect();
-  }, []);
+    return () => {
+      mutationObserver.disconnect();
+      observer?.disconnect();
+    };
+  }, [pathname]);
 
   return null;
 }

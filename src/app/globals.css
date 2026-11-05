@@ -587,3 +587,28 @@
     animation-delay: 0s !important;
   }
 }
+
+/* MacFlow PREMIUM GRAPHITE PALETTE */
+html.dark {
+  --bg-primary: #292a33;
+  --bg-secondary: #22232b;
+  --bg-surface: #30313b;
+  --background: #292a33;
+  --background-elevated: #383a46;
+  --card: #30313b;
+  --popover: #24252d;
+}
+
+/* Плавное появление при скролле */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

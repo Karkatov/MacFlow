@@ -67,7 +67,7 @@ export function Footer() {
           </div>
 
           <div className="footer-brand">
-            <span className="footer-brand-name">MACFLOW</span>
+            <span className="footer-brand-name">MacFlow</span>
           </div>
         </div>
       </div>

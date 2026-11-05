@@ -26,11 +26,11 @@ export function FaqSection({ items }: { items: FaqItem[] }) {
           </h2>
         </div>
 
-        <div className="faq-list" data-stagger>
+        <div className="faq-list" data-animate="fade">
           {items.map((item) => {
             const open = openId === item.id;
             return (
-              <div key={item.id} className={`faq-item ${open ? 'open' : ''}`} data-stagger-child>
+              <div key={item.id} className={`faq-item ${open ? 'open' : ''}`}>
                 <button
                   type="button"
                   className="faq-question"

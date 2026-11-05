@@ -14,7 +14,6 @@ import { TestimonialsSection } from '@/components/home/testimonials-section';
 import { LaptopSection } from '@/components/home/laptop-section';
 import { FaqSection, type FaqItem } from '@/components/home/faq-section';
 import { CtaSection } from '@/components/home/cta-section';
-import { RevealProvider } from '@/components/home/reveal-provider';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -67,7 +66,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
       <LaptopSection />
       <FaqSection items={faqItems} />
       <CtaSection demoHref={demoHref} />
-      <RevealProvider />
     </>
   );
 }
