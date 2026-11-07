@@ -7,7 +7,7 @@
  *   public/placeholders/categories/category-01..09.svg
  *   public/placeholders/avatars/avatar-01..06.svg
  *   public/placeholders/screenshots/app-*.svg
- *   public/logo.svg, public/logo-compact.svg, public/favicon.svg
+ *   public/logo.svg, public/favicon.svg
  *   public/favicon.ico, public/apple-touch-icon.png, public/og/og-default.png
  *   public/manifest.webmanifest
  *
@@ -183,7 +183,7 @@ function logoSvg(compact) {
 
   const wordmark = compact
     ? ''
-    : `<text x="50" y="26" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="19" font-weight="700" fill="${PALETTE.foreground}">Live<tspan fill="${PALETTE.brandFrom}">Walls</tspan></text>`;
+    : `<text x="50" y="26" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="19" font-weight="700" fill="${PALETTE.foreground}">Mac<tspan fill="${PALETTE.brandFrom}">Flow</tspan></text>`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
     ${mark}
@@ -377,7 +377,6 @@ screens.forEach(([file, label, variant], index) => {
 });
 
 written.push(write('logo.svg', logoSvg(false)));
-written.push(write('logo-compact.svg', logoSvg(true)));
 written.push(write('favicon.svg', faviconSvg()));
 
 // Иконки

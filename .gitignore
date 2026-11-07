@@ -10,6 +10,9 @@
 next-env.d.ts
 *.tsbuildinfo
 
+# медиа генерируется из wallpapers/ через `npm run media` (predev/prebuild)
+/public/media/
+
 # тесты
 /coverage
 /test-results

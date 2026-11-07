@@ -111,9 +111,9 @@ src/
     robots.ts, sitemap.ts
   components/
     ui/                — shadcn/ui-примитивы
-    layout/, home/, catalog/, wallpaper/, faq/, support/, account/, admin/, legal/, shared/, onboarding/
+    layout/, home/, wallpaper/, faq/, support/, account/, admin/, legal/, shared/, onboarding/
   config/site.ts       — единый конфиг: цены, навигация, API, S3/CDN, легал
-  data/mock/           — демо-данные (34 обоев, 9 категорий, отзывы)
+  data/mock/           — демо-данные (обои, категории, пользователи, покупки)
   data/legal/          — тексты legal-документов (RU/EN)
   i18n/                — routing, request, navigation
   lib/
@@ -122,11 +122,19 @@ src/
     seo/               — metadata и JSON-LD
     store/, hooks/, utils/
   messages/            — ru.json, en.json
-  styles/              — theme.ts, globals.css
+  styles/              — theme.ts, fonts.ts, animations.ts, wallspace.css
   types/               — доменные типы
-scripts/               — генерация плейсхолдеров и postbuild
+wallpapers/            — исходники медиа (images, videos, posters, showcase)
+scripts/               — sync-media, генерация демо-медиа/плейсхолдеров, postbuild
 tests/                 — unit/ и e2e/
 ```
+
+## Медиа
+
+Файлы кладутся в `wallpapers/{images,videos,posters,showcase}/`.
+`npm run media` (автоматически в `predev` и `prebuild`) копирует их в
+`public/media/` и обновляет `src/generated/media-manifest.json`.
+`public/media/` не коммитится — генерируется при каждой сборке.
 
 ## Локализация
 

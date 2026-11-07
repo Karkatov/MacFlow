@@ -140,7 +140,6 @@ const nextConfig: NextConfig = {
         async redirects() {
           return [
             { source: '/', destination: '/ru', permanent: false },
-            { source: '/wallpapers', destination: '/ru/wallpapers', permanent: false },
             { source: '/pricing', destination: '/ru/pricing', permanent: false },
           ];
         },

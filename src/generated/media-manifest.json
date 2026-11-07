@@ -1,114 +1,114 @@
 {
-  "generatedAt": "2026-11-05T17:33:28.350Z",
+  "generatedAt": "2026-11-07T10:28:30.784Z",
   "counts": {
     "images": 13,
     "videos": 17,
-    "showcase": 0
+    "showcase": 2
   },
   "items": [
     {
       "id": "zcz",
       "kind": "image",
       "title": "§Zcz",
-      "src": "/media/images/%C2%A7zcz.jpg",
-      "poster": "/media/images/%C2%A7zcz.jpg",
-      "file": "§zcz.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/%C2%A7zcz.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/%C2%A7zcz.jpg",
+      "file": "Новая папка с объектами/§zcz.jpg"
     },
     {
       "id": "2",
       "kind": "image",
       "title": "2",
-      "src": "/media/images/2.jpg",
-      "poster": "/media/images/2.jpg",
-      "file": "2.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/2.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/2.jpg",
+      "file": "Новая папка с объектами/2.jpg"
     },
     {
       "id": "33",
       "kind": "image",
       "title": "33",
-      "src": "/media/images/33.jpg",
-      "poster": "/media/images/33.jpg",
-      "file": "33.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/33.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/33.jpg",
+      "file": "Новая папка с объектами/33.jpg"
     },
     {
       "id": "3434",
       "kind": "image",
       "title": "3434",
-      "src": "/media/images/3434.jpg",
-      "poster": "/media/images/3434.jpg",
-      "file": "3434.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/3434.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/3434.jpg",
+      "file": "Новая папка с объектами/3434.jpg"
     },
     {
       "id": "asdssa",
       "kind": "image",
       "title": "Asdssa",
-      "src": "/media/images/asdssa.jpg",
-      "poster": "/media/images/asdssa.jpg",
-      "file": "asdssa.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/asdssa.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/asdssa.jpg",
+      "file": "Новая папка с объектами/asdssa.jpg"
     },
     {
       "id": "demo-aurora",
       "kind": "image",
       "title": "Demo Aurora",
-      "src": "/media/images/demo-aurora.png",
-      "poster": "/media/images/demo-aurora.png",
-      "file": "demo-aurora.png"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/demo-aurora.png",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/demo-aurora.png",
+      "file": "Новая папка с объектами/demo-aurora.png"
     },
     {
       "id": "low-presetже-лтыи-porsche-gt3-rs-в-маслянои-живописи",
       "kind": "image",
       "title": "Low PresetЖёлтый Porsche GT3 RS в масляной живописи",
-      "src": "/media/images/low%20preset%D0%96%D0%B5%CC%88%D0%BB%D1%82%D1%8B%D0%B8%CC%86%20Porsche%20GT3%20RS%20%D0%B2%20%D0%BC%D0%B0%D1%81%D0%BB%D1%8F%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8.jpg",
-      "poster": "/media/images/low%20preset%D0%96%D0%B5%CC%88%D0%BB%D1%82%D1%8B%D0%B8%CC%86%20Porsche%20GT3%20RS%20%D0%B2%20%D0%BC%D0%B0%D1%81%D0%BB%D1%8F%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8.jpg",
-      "file": "low presetЖёлтый Porsche GT3 RS в масляной живописи.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/low%20preset%D0%96%D0%B5%CC%88%D0%BB%D1%82%D1%8B%D0%B8%CC%86%20Porsche%20GT3%20RS%20%D0%B2%20%D0%BC%D0%B0%D1%81%D0%BB%D1%8F%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/low%20preset%D0%96%D0%B5%CC%88%D0%BB%D1%82%D1%8B%D0%B8%CC%86%20Porsche%20GT3%20RS%20%D0%B2%20%D0%BC%D0%B0%D1%81%D0%BB%D1%8F%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8.jpg",
+      "file": "Новая папка с объектами/low presetЖёлтый Porsche GT3 RS в масляной живописи.jpg"
     },
     {
       "id": "sadfasdfs",
       "kind": "image",
       "title": "Sadfasdfs",
-      "src": "/media/images/sadfasdfs.jpg",
-      "poster": "/media/images/sadfasdfs.jpg",
-      "file": "sadfasdfs.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sadfasdfs.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sadfasdfs.jpg",
+      "file": "Новая папка с объектами/sadfasdfs.jpg"
     },
     {
       "id": "sadfdasf",
       "kind": "image",
       "title": "Sadfdasf",
-      "src": "/media/images/sadfdasf.jpg",
-      "poster": "/media/images/sadfdasf.jpg",
-      "file": "sadfdasf.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sadfdasf.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sadfdasf.jpg",
+      "file": "Новая папка с объектами/sadfdasf.jpg"
     },
     {
       "id": "sdfdss",
       "kind": "image",
       "title": "Sdfdss",
-      "src": "/media/images/sdfdss.jpg",
-      "poster": "/media/images/sdfdss.jpg",
-      "file": "sdfdss.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sdfdss.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sdfdss.jpg",
+      "file": "Новая папка с объектами/sdfdss.jpg"
     },
     {
       "id": "sdfs",
       "kind": "image",
       "title": "Sdfs",
-      "src": "/media/images/sdfs.jpg",
-      "poster": "/media/images/sdfs.jpg",
-      "file": "sdfs.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sdfs.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sdfs.jpg",
+      "file": "Новая папка с объектами/sdfs.jpg"
     },
     {
       "id": "wefqwf",
       "kind": "image",
       "title": "Wefqwf",
-      "src": "/media/images/wefqwf.jpg",
-      "poster": "/media/images/wefqwf.jpg",
-      "file": "wefqwf.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/wefqwf.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/wefqwf.jpg",
+      "file": "Новая папка с объектами/wefqwf.jpg"
     },
     {
       "id": "wqdwq",
       "kind": "image",
       "title": "Wqdwq",
-      "src": "/media/images/wqdwq.jpg",
-      "poster": "/media/images/wqdwq.jpg",
-      "file": "wqdwq.jpg"
+      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/wqdwq.jpg",
+      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/wqdwq.jpg",
+      "file": "Новая папка с объектами/wqdwq.jpg"
     },
     {
       "id": "cars-wallpaper-885",
@@ -123,7 +123,7 @@
       "kind": "video",
       "title": "Demo Aurora",
       "src": "/media/videos/demo-aurora.mp4",
-      "poster": "/media/posters/auto-demo-aurora.jpg",
+      "poster": "/media/posters/demo-aurora.jpg",
       "file": "demo-aurora.mp4"
     },
     {
@@ -247,7 +247,22 @@
       "file": "video-output-DB5A6DB0-2B0B-4012-9D15-2C32BD6CAEC4-1.mp4"
     }
   ],
-  "showcase": [],
+  "showcase": [
+    {
+      "id": "showcase-cf10f5e0-23c6-4c44-adc8-d07c583c48f8",
+      "kind": "video",
+      "title": "Cf10f5e0 23c6 4c44 Adc8 D07c583c48f8",
+      "src": "/media/showcase/cf10f5e0-23c6-4c44-adc8-d07c583c48f8.mp4",
+      "poster": null
+    },
+    {
+      "id": "showcase-wallpaper-4",
+      "kind": "image",
+      "title": "Wallpaper (4)",
+      "src": "/media/showcase/Wallpaper_%20(4).png",
+      "poster": "/media/showcase/Wallpaper_%20(4).png"
+    }
+  ],
   "hero": {
     "id": "cars-wallpaper-885",
     "kind": "video",
@@ -260,16 +275,15 @@
     "id": "zcz",
     "kind": "image",
     "title": "§Zcz",
-    "src": "/media/images/%C2%A7zcz.jpg",
-    "poster": "/media/images/%C2%A7zcz.jpg",
-    "file": "§zcz.jpg"
+    "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/%C2%A7zcz.jpg",
+    "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/%C2%A7zcz.jpg",
+    "file": "Новая папка с объектами/§zcz.jpg"
   },
   "demo": {
-    "id": "cars-wallpaper-885",
+    "id": "showcase-cf10f5e0-23c6-4c44-adc8-d07c583c48f8",
     "kind": "video",
-    "title": "Cars Wallpaper 885",
-    "src": "/media/videos/cars_wallpaper_885.mp4",
-    "poster": "/media/posters/auto-cars-wallpaper-885.jpg",
-    "file": "cars_wallpaper_885.mp4"
+    "title": "Cf10f5e0 23c6 4c44 Adc8 D07c583c48f8",
+    "src": "/media/showcase/cf10f5e0-23c6-4c44-adc8-d07c583c48f8.mp4",
+    "poster": null
   }
 }

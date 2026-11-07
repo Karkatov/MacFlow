@@ -157,8 +157,12 @@ const showcaseFiles = walk(folders.showcase).filter(
   (rel) => IMAGE_EXT.has(extOf(rel)) || VIDEO_EXT.has(extOf(rel)),
 );
 
+/** Копируем только те постеры, которые реально привязаны к видео. */
 const posterByRel = new Map();
-for (const rel of posterFiles) posterByRel.set(rel, copy(folders.posters, rel, 'posters'));
+function posterUrl(rel) {
+  if (!posterByRel.has(rel)) posterByRel.set(rel, copy(folders.posters, rel, 'posters'));
+  return posterByRel.get(rel);
+}
 
 const items = [];
 
@@ -177,9 +181,7 @@ for (const rel of imageFiles) {
 for (const rel of videoFiles) {
   const src = copy(folders.videos, rel, 'videos');
   const posterRel = findPoster(rel, posterFiles);
-  const poster = posterRel
-    ? (posterByRel.get(posterRel) ?? copy(folders.posters, posterRel, 'posters'))
-    : autoPoster(rel);
+  const poster = posterRel ? posterUrl(posterRel) : autoPoster(rel);
   items.push({
     id: ensureUnique(slugify(rel)),
     kind: 'video',
@@ -197,7 +199,7 @@ for (const rel of showcaseFiles) {
   let poster = null;
   if (kind === 'video') {
     const posterRel = findPoster(rel, posterFiles);
-    if (posterRel) poster = posterByRel.get(posterRel) ?? null;
+    if (posterRel) poster = posterUrl(posterRel);
   } else {
     poster = src;
   }
