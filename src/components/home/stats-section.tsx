@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { galleryItems, mediaCounts } from '@/lib/media/library';
+import { galleryItems, mediaCounts, type MediaItem } from '@/lib/media/library';
 import { CountUp } from './count-up';
 import { LazyVideo } from './lazy-video';
 
@@ -9,6 +9,21 @@ export async function StatsSection() {
   const items = galleryItems();
   const videoPool = items.filter((item) => item.kind === 'video');
   const fallback = items[0] ?? null;
+
+  const renderMedia = (media: MediaItem | null, label: string) => {
+    if (!media) return null;
+    return media.kind === 'video' ? (
+      <LazyVideo
+        src={media.src}
+        poster={media.poster}
+        className="analytics-card-video"
+        ariaLabel={label}
+      />
+    ) : (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src={media.src} alt={label} className="analytics-card-video" loading="lazy" />
+    );
+  };
 
   const cards = [
     {
@@ -54,14 +69,7 @@ export async function StatsSection() {
               const media = mediaFor(index);
               return (
                 <div key={card.key} className="analytics-card analytics-card-half">
-                  {media ? (
-                    <LazyVideo
-                      src={media.src}
-                      poster={media.poster}
-                      className="analytics-card-video"
-                      ariaLabel={card.title}
-                    />
-                  ) : null}
+                  {renderMedia(media, card.title)}
                   <div className="analytics-card-content">
                     <div className="analytics-card-number-wrapper">
                       <div className="analytics-card-number">
@@ -83,14 +91,7 @@ export async function StatsSection() {
               const media = mediaFor(index + 2);
               return (
                 <div key={card.key} className="analytics-card analytics-card-third">
-                  {media ? (
-                    <LazyVideo
-                      src={media.src}
-                      poster={media.poster}
-                      className="analytics-card-video"
-                      ariaLabel={card.title}
-                    />
-                  ) : null}
+                  {renderMedia(media, card.title)}
                   <div className="analytics-card-content">
                     <div className="analytics-card-number-wrapper">
                       <div className="analytics-card-number">

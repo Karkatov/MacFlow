@@ -10,7 +10,7 @@ type LockScreenHeroProps = {
   heroMedia: MediaItem | null;
   /** Пул медиа для папок на экране блокировки. */
   folders: MediaItem[];
-  /** Ссылка на демо-ролик (локальный файл из wallpapers/showcase). */
+  /** Ссылка на демо-ролик (локальный файл из wallpapers/demo). */
   demoHref: string | null;
 };
 

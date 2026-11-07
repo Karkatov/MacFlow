@@ -24,12 +24,22 @@ export async function DemoSection() {
         {demoMedia ? (
           <div className="watch-action-video-outer" data-animate data-animate-delay="100">
             <div className="watch-action-video-frame">
-              <LazyVideo
-                src={demoMedia.src}
-                poster={demoMedia.poster}
-                className="watch-action-video"
-                ariaLabel={t('title')}
-              />
+              {demoMedia.kind === 'video' ? (
+                <LazyVideo
+                  src={demoMedia.src}
+                  poster={demoMedia.poster}
+                  className="watch-action-video"
+                  ariaLabel={t('title')}
+                />
+              ) : (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={demoMedia.src}
+                  alt={t('title')}
+                  className="watch-action-video"
+                  loading="lazy"
+                />
+              )}
             </div>
           </div>
         ) : null}

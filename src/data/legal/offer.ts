@@ -12,7 +12,7 @@ export const publicOffer: Record<Locale, LegalDocument> = {
         id: 'terms',
         title: '1. Термины',
         list: [
-          'Программа — программа для ЭВМ «LiveWall» для macOS, включая собственный код, интерфейс и компоненты, права на которые принадлежат Лицензиару либо используются им на законном основании.',
+          'Программа — программа для ЭВМ «MacFlow» для macOS, включая собственный код, интерфейс и компоненты, права на которые принадлежат Лицензиару либо используются им на законном основании.',
           'Контент — видео, изображения, заставки и иные материалы, поставляемые вместе с Программой. Права на материалы определяются правами соответствующих правообладателей.',
           'Лицензиат — физическое лицо, приобретающее право использовать Программу для личных целей.',
           'Лицензия — простая (неисключительная) лицензия в пределах, прямо указанных в оферте и выбранном тарифе.',
@@ -112,7 +112,7 @@ export const publicOffer: Record<Locale, LegalDocument> = {
         id: 'subject',
         title: '1. Subject',
         paragraphs: [
-          'The Licensor grants the Licensee a non-exclusive license to use the LiveWall application under the terms of the selected tariff.',
+          'The Licensor grants the Licensee a non-exclusive license to use the MacFlow application under the terms of the selected tariff.',
         ],
       },
       {

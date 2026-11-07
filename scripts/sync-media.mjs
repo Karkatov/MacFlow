@@ -1,19 +1,25 @@
 #!/usr/bin/env node
 /**
- * MacFlow — синхронизация обоев из корневых папок в `public/`.
+ * MacFlow — синхронизация обоев из `wallpapers/` в `public/media/`.
  *
- * Пользователь кладёт файлы в:
- *   wallpapers/images/    — статичные обои (jpg, png, webp, avif, gif, svg)
- *   wallpapers/videos/    — живые обои (mp4, webm, mov, m4v)
- *   wallpapers/posters/   — постеры для видео (имя файла = имя видео)
- *   wallpapers/showcase/  — видео/картинки для демо-блока (первый файл)
+ * Структура:
+ *   wallpapers/gallery/image/     — статичные обои для галереи
+ *   wallpapers/gallery/video/     — живые обои для галереи
+ *   wallpapers/hero/image/        — картинка для интерактивного hero
+ *   wallpapers/hero/video/        — видео для интерактивного hero
+ *   wallpapers/lock-screen/image/ — картинка для блока Lock Screen
+ *   wallpapers/lock-screen/video/ — видео для блока Lock Screen
+ *   wallpapers/demo/image/        — картинка для блока «Watch it in action»
+ *   wallpapers/demo/video/        — видео для блока «Watch it in action»
+ *   wallpapers/posters/           — постеры для видео (имя = имя видео)
  *
- * Скрипт копирует их в public/media/** и генерирует манифест
+ * Скрипт копирует файлы в `public/media/**` и генерирует манифест
  * `src/generated/media-manifest.json`. Запускается автоматически
  * перед `npm run dev` и `npm run build` (predev / prebuild).
  */
 
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -26,26 +32,33 @@ const MANIFEST = path.join(MANIFEST_DIR, 'media-manifest.json');
 const IMAGE_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif', '.gif', '.svg']);
 const VIDEO_EXT = new Set(['.mp4', '.webm', '.mov', '.m4v']);
 
-const folders = {
-  images: path.join(SOURCE, 'images'),
-  videos: path.join(SOURCE, 'videos'),
-  posters: path.join(SOURCE, 'posters'),
-  showcase: path.join(SOURCE, 'showcase'),
-};
+/** Секции сайта. У каждой — свои папки `image/` и `video/`. */
+const SECTIONS = [
+  { key: 'gallery', dir: path.join(SOURCE, 'gallery') },
+  { key: 'hero', dir: path.join(SOURCE, 'hero') },
+  { key: 'lockScreen', dir: path.join(SOURCE, 'lock-screen') },
+  { key: 'demo', dir: path.join(SOURCE, 'demo') },
+];
 
-for (const dir of [...Object.values(folders), PUBLIC_MEDIA, MANIFEST_DIR]) {
+const POSTERS_DIR = path.join(SOURCE, 'posters');
+
+for (const section of SECTIONS) {
+  fs.mkdirSync(path.join(section.dir, 'image'), { recursive: true });
+  fs.mkdirSync(path.join(section.dir, 'video'), { recursive: true });
+}
+for (const dir of [POSTERS_DIR, PUBLIC_MEDIA, MANIFEST_DIR]) {
   fs.mkdirSync(dir, { recursive: true });
 }
 
 /** Рекурсивно собирает файлы, пропуская служебные. */
-function walk(dir, base = dir) {
+function walk(dir) {
   if (!fs.existsSync(dir)) return [];
   const out = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (entry.name.startsWith('.') || entry.name === 'README.md') continue;
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) out.push(...walk(full, base));
-    else if (entry.isFile()) out.push(path.relative(base, full));
+    if (entry.isDirectory()) out.push(...walk(full));
+    else if (entry.isFile()) out.push(path.relative(dir, full));
   }
   return out.sort((a, b) => a.localeCompare(b, 'en'));
 }
@@ -84,12 +97,13 @@ const ensureUnique = (() => {
   };
 })();
 
-function copy(srcDir, rel, destKind) {
+function copy(srcDir, rel, destParts) {
   const from = path.join(srcDir, rel);
-  const to = path.join(PUBLIC_MEDIA, destKind, rel);
+  const to = path.join(PUBLIC_MEDIA, ...destParts, rel);
   fs.mkdirSync(path.dirname(to), { recursive: true });
   fs.copyFileSync(from, to);
-  return `/media/${destKind}/${rel.split(path.sep).map(encodeURIComponent).join('/')}`;
+  const urlPath = [...destParts, ...rel.split(path.sep)].map(encodeURIComponent).join('/');
+  return `/media/${urlPath}`;
 }
 
 /** Ищет постер с тем же basename, что и видео. */
@@ -103,27 +117,17 @@ function findPoster(videoRel, posterFiles) {
 }
 
 /** Пытается вытащить первый кадр видео, если ffmpeg доступен. */
-function autoPoster(videoRel) {
+function autoPoster(srcDir, videoRel, sectionKey) {
   if (!hasBin('ffmpeg')) return null;
-  const stem = `${slugify(videoRel) || 'video'}.jpg`;
-  const outRel = `auto-${stem}`;
+  const hash = createHash('sha1').update(videoRel).digest('hex').slice(0, 8);
+  const stem = slugify(videoRel) || 'video';
+  const outRel = `auto-${sectionKey}-${stem}-${hash}.jpg`;
   const to = path.join(PUBLIC_MEDIA, 'posters', outRel);
   fs.mkdirSync(path.dirname(to), { recursive: true });
   try {
     execFileSync(
       'ffmpeg',
-      [
-        '-y',
-        '-ss',
-        '0.5',
-        '-i',
-        path.join(folders.videos, videoRel),
-        '-frames:v',
-        '1',
-        '-q:v',
-        '5',
-        to,
-      ],
+      ['-y', '-ss', '0.5', '-i', path.join(srcDir, videoRel), '-frames:v', '1', '-q:v', '5', to],
       { stdio: 'ignore' },
     );
     return `/media/posters/${outRel}`;
@@ -145,94 +149,92 @@ function hasBin(bin) {
 // Сканируем и копируем
 // ─────────────────────────────────────────────────────────────
 
-fs.rmSync(path.join(PUBLIC_MEDIA, 'images'), { recursive: true, force: true });
-fs.rmSync(path.join(PUBLIC_MEDIA, 'videos'), { recursive: true, force: true });
-fs.rmSync(path.join(PUBLIC_MEDIA, 'posters'), { recursive: true, force: true });
-fs.rmSync(path.join(PUBLIC_MEDIA, 'showcase'), { recursive: true, force: true });
+for (const dir of ['gallery', 'hero', 'lockScreen', 'demo', 'posters']) {
+  fs.rmSync(path.join(PUBLIC_MEDIA, dir), { recursive: true, force: true });
+}
+fs.mkdirSync(PUBLIC_MEDIA, { recursive: true });
 
-const imageFiles = walk(folders.images).filter((rel) => IMAGE_EXT.has(extOf(rel)));
-const videoFiles = walk(folders.videos).filter((rel) => VIDEO_EXT.has(extOf(rel)));
-const posterFiles = walk(folders.posters).filter((rel) => IMAGE_EXT.has(extOf(rel)));
-const showcaseFiles = walk(folders.showcase).filter(
-  (rel) => IMAGE_EXT.has(extOf(rel)) || VIDEO_EXT.has(extOf(rel)),
-);
+const posterFiles = walk(POSTERS_DIR).filter((rel) => IMAGE_EXT.has(extOf(rel)));
 
 /** Копируем только те постеры, которые реально привязаны к видео. */
 const posterByRel = new Map();
 function posterUrl(rel) {
-  if (!posterByRel.has(rel)) posterByRel.set(rel, copy(folders.posters, rel, 'posters'));
+  if (!posterByRel.has(rel)) {
+    posterByRel.set(rel, copy(POSTERS_DIR, rel, ['posters']));
+  }
   return posterByRel.get(rel);
 }
 
-const items = [];
+function buildItems(section, kind) {
+  const sourceDir = path.join(section.dir, kind);
+  const extensions = kind === 'image' ? IMAGE_EXT : VIDEO_EXT;
+  const files = walk(sourceDir).filter((rel) => extensions.has(extOf(rel)));
 
-for (const rel of imageFiles) {
-  const src = copy(folders.images, rel, 'images');
-  items.push({
-    id: ensureUnique(slugify(rel)),
-    kind: 'image',
-    title: humanize(rel),
-    src,
-    poster: src,
-    file: rel,
+  return files.map((rel) => {
+    const src = copy(sourceDir, rel, [section.key, kind]);
+    let poster = src;
+
+    if (kind === 'video') {
+      const posterRel = findPoster(rel, posterFiles);
+      poster = posterRel ? posterUrl(posterRel) : autoPoster(sourceDir, rel, section.key);
+    }
+
+    return {
+      id: ensureUnique(`${section.key}-${slugify(rel)}`),
+      kind,
+      title: humanize(rel),
+      src,
+      poster,
+      file: rel,
+      section: section.key,
+    };
   });
 }
 
-for (const rel of videoFiles) {
-  const src = copy(folders.videos, rel, 'videos');
-  const posterRel = findPoster(rel, posterFiles);
-  const poster = posterRel ? posterUrl(posterRel) : autoPoster(rel);
-  items.push({
-    id: ensureUnique(slugify(rel)),
-    kind: 'video',
-    title: humanize(rel),
-    src,
-    poster,
-    file: rel,
-  });
+function buildSection(section) {
+  const images = buildItems(section, 'image');
+  const videos = buildItems(section, 'video');
+  const items = [...images, ...videos];
+  return {
+    images,
+    videos,
+    items,
+    item: videos[0] ?? images[0] ?? null,
+  };
 }
 
-const showcase = [];
-for (const rel of showcaseFiles) {
-  const kind = VIDEO_EXT.has(extOf(rel)) ? 'video' : 'image';
-  const src = copy(folders.showcase, rel, 'showcase');
-  let poster = null;
-  if (kind === 'video') {
-    const posterRel = findPoster(rel, posterFiles);
-    if (posterRel) poster = posterUrl(posterRel);
-  } else {
-    poster = src;
-  }
-  showcase.push({
-    id: ensureUnique(`showcase-${slugify(rel)}`),
-    kind,
-    title: humanize(rel),
-    src,
-    poster,
-  });
-}
-
-const videos = items.filter((item) => item.kind === 'video');
-const images = items.filter((item) => item.kind === 'image');
+const sections = Object.fromEntries(
+  SECTIONS.map((section) => [section.key, buildSection(section)]),
+);
 
 const manifest = {
   generatedAt: new Date().toISOString(),
-  counts: { images: images.length, videos: videos.length, showcase: showcase.length },
-  items,
-  showcase,
-  hero: videos[0] ?? images[0] ?? null,
-  fallbackHero: images[0] ?? null,
-  demo: showcase.find((item) => item.kind === 'video') ?? videos[0] ?? images[0] ?? null,
+  counts: {
+    images: sections.gallery.images.length,
+    videos: sections.gallery.videos.length,
+    hero: { images: sections.hero.images.length, videos: sections.hero.videos.length },
+    lockScreen: {
+      images: sections.lockScreen.images.length,
+      videos: sections.lockScreen.videos.length,
+    },
+    demo: { images: sections.demo.images.length, videos: sections.demo.videos.length },
+  },
+  gallery: sections.gallery,
+  hero: sections.hero,
+  lockScreen: sections.lockScreen,
+  demo: sections.demo,
 };
 
 fs.writeFileSync(MANIFEST, `${JSON.stringify(manifest, null, 2)}\n`);
 
 console.log(
-  `✓ MacFlow media: ${images.length} images, ${videos.length} videos, ${showcase.length} showcase → public/media`,
+  `✓ MacFlow media: gallery ${sections.gallery.images.length} images / ${sections.gallery.videos.length} videos · ` +
+    `hero ${sections.hero.items.length} · lock-screen ${sections.lockScreen.items.length} · ` +
+    `demo ${sections.demo.items.length} → public/media`,
 );
 
-if (items.length === 0) {
+if (sections.gallery.items.length === 0) {
   console.log(
-    'ℹ Папки wallpapers/* пусты. Добавьте файлы и запустите `npm run media` (или перезапустите dev/build).',
+    'ℹ Папки wallpapers/gallery/* пусты. Добавьте файлы и запустите `npm run media` (или перезапустите dev/build).',
   );
 }

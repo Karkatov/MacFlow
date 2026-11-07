@@ -124,17 +124,25 @@ src/
   messages/            — ru.json, en.json
   styles/              — theme.ts, fonts.ts, animations.ts, wallspace.css
   types/               — доменные типы
-wallpapers/            — исходники медиа (images, videos, posters, showcase)
-scripts/               — sync-media, генерация демо-медиа/плейсхолдеров, postbuild
+wallpapers/            — исходники медиа (gallery, hero, lock-screen, demo, posters)
+scripts/               — sync-media, экспорт текстов, генерация демо-медиа/плейсхолдеров, postbuild
 tests/                 — unit/ и e2e/
 ```
 
 ## Медиа
 
-Файлы кладутся в `wallpapers/{images,videos,posters,showcase}/`.
+Файлы кладутся в `wallpapers/<секция>/{image,video}/`:
+
+- `gallery/` — обои для бегущей галереи и статистики
+- `hero/` — интерактивный экран блокировки в hero
+- `lock-screen/` — отдельный блок «Экран блокировки»
+- `demo/` — блок «Watch it in action»
+- `posters/` — постеры для видео (имя файла = имя видео)
+
 `npm run media` (автоматически в `predev` и `prebuild`) копирует их в
 `public/media/` и обновляет `src/generated/media-manifest.json`.
 `public/media/` не коммитится — генерируется при каждой сборке.
+Подробная инструкция — в `wallpapers/README.md`.
 
 ## Локализация
 
@@ -142,6 +150,8 @@ tests/                 — unit/ и e2e/
 - Middleware нет намеренно — локаль лежит в сегменте пути, поэтому всё работает
   и на сервере, и в статическом экспорте.
 - Все пользовательские строки — в `src/messages/*.json`; UI не должен содержать «сырых» строк.
+- `npm run copy:export` собирает всю текстовку страниц и legal-документы
+  в `~/Desktop/MacFlow-тексты.txt` для редактирования.
 - Ссылки внутри приложения — только через `Link` из `@/i18n/navigation`,
   иначе потеряется префикс локали.
 

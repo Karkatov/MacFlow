@@ -5,7 +5,6 @@
  * Создаёт стартовый набор SVG-обоев и коротких mp4-роликов, чтобы сайт
  * выглядел живым сразу после клонирования. Все файлы лежат в корневой
  * папке `wallpapers/` — их можно удалить и заменить своими.
- *
  * Запуск: `node scripts/generate-demo-media.mjs`
  * Требуется ffmpeg + ImageMagick (для видео и постеров).
  */
@@ -15,8 +14,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const root = process.cwd();
-const imagesDir = path.join(root, 'wallpapers/images');
-const videosDir = path.join(root, 'wallpapers/videos');
+const imagesDir = path.join(root, 'wallpapers/gallery/image');
+const videosDir = path.join(root, 'wallpapers/gallery/video');
 const postersDir = path.join(root, 'wallpapers/posters');
 
 for (const dir of [imagesDir, videosDir, postersDir]) {
@@ -247,8 +246,8 @@ for (const item of videos) {
   }
 }
 
-// Один общий showcase-ролик для блока «Watch it in action».
-const showcaseDir = path.join(root, 'wallpapers/showcase');
+// Один общий demo-ролик для блока «Watch it in action».
+const showcaseDir = path.join(root, 'wallpapers/demo/video');
 fs.mkdirSync(showcaseDir, { recursive: true });
 const showcase = path.join(showcaseDir, 'demo-showcase.mp4');
 const showcasePoster = path.join(postersDir, 'demo-showcase.jpg');

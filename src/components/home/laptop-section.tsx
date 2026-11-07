@@ -1,5 +1,11 @@
 import { getTranslations } from 'next-intl/server';
-import { galleryItems, showcaseItems } from '@/lib/media/library';
+import {
+  demoMedia,
+  galleryItems,
+  heroMedia,
+  lockScreenMedia,
+  type MediaItem,
+} from '@/lib/media/library';
 import { LazyVideo } from './lazy-video';
 
 /** Ноутбук с живым рабочим столом и окном приложения. */
@@ -7,8 +13,11 @@ export async function LaptopSection() {
   const t = await getTranslations('landing.laptop');
   const items = galleryItems();
   const videos = items.filter((item) => item.kind === 'video');
-  const background = videos[0] ?? showcaseItems[0] ?? null;
-  const screen = videos[1] ?? videos[0] ?? showcaseItems[0] ?? null;
+  const fallback = [heroMedia, lockScreenMedia, demoMedia].filter(
+    (item): item is MediaItem => item?.kind === 'video',
+  );
+  const background = videos[0] ?? fallback[0] ?? null;
+  const screen = videos[1] ?? videos[0] ?? fallback[1] ?? fallback[0] ?? null;
 
   return (
     <section className="laptop-section">

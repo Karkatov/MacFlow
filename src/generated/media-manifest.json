@@ -1,289 +1,650 @@
 {
-  "generatedAt": "2026-11-07T10:32:11.010Z",
+  "generatedAt": "2026-11-07T10:51:51.700Z",
   "counts": {
     "images": 13,
     "videos": 17,
-    "showcase": 2
+    "hero": {
+      "images": 0,
+      "videos": 0
+    },
+    "lockScreen": {
+      "images": 1,
+      "videos": 0
+    },
+    "demo": {
+      "images": 0,
+      "videos": 1
+    }
   },
-  "items": [
-    {
-      "id": "zcz",
-      "kind": "image",
-      "title": "§Zcz",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/%C2%A7zcz.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/%C2%A7zcz.jpg",
-      "file": "Новая папка с объектами/§zcz.jpg"
-    },
-    {
-      "id": "2",
-      "kind": "image",
-      "title": "2",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/2.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/2.jpg",
-      "file": "Новая папка с объектами/2.jpg"
-    },
-    {
-      "id": "33",
-      "kind": "image",
-      "title": "33",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/33.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/33.jpg",
-      "file": "Новая папка с объектами/33.jpg"
-    },
-    {
-      "id": "3434",
-      "kind": "image",
-      "title": "3434",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/3434.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/3434.jpg",
-      "file": "Новая папка с объектами/3434.jpg"
-    },
-    {
-      "id": "asdssa",
-      "kind": "image",
-      "title": "Asdssa",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/asdssa.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/asdssa.jpg",
-      "file": "Новая папка с объектами/asdssa.jpg"
-    },
-    {
-      "id": "demo-aurora",
-      "kind": "image",
-      "title": "Demo Aurora",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/demo-aurora.png",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/demo-aurora.png",
-      "file": "Новая папка с объектами/demo-aurora.png"
-    },
-    {
-      "id": "low-presetже-лтыи-porsche-gt3-rs-в-маслянои-живописи",
-      "kind": "image",
-      "title": "Low PresetЖёлтый Porsche GT3 RS в масляной живописи",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/low%20preset%D0%96%D0%B5%CC%88%D0%BB%D1%82%D1%8B%D0%B8%CC%86%20Porsche%20GT3%20RS%20%D0%B2%20%D0%BC%D0%B0%D1%81%D0%BB%D1%8F%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/low%20preset%D0%96%D0%B5%CC%88%D0%BB%D1%82%D1%8B%D0%B8%CC%86%20Porsche%20GT3%20RS%20%D0%B2%20%D0%BC%D0%B0%D1%81%D0%BB%D1%8F%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8.jpg",
-      "file": "Новая папка с объектами/low presetЖёлтый Porsche GT3 RS в масляной живописи.jpg"
-    },
-    {
-      "id": "sadfasdfs",
-      "kind": "image",
-      "title": "Sadfasdfs",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sadfasdfs.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sadfasdfs.jpg",
-      "file": "Новая папка с объектами/sadfasdfs.jpg"
-    },
-    {
-      "id": "sadfdasf",
-      "kind": "image",
-      "title": "Sadfdasf",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sadfdasf.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sadfdasf.jpg",
-      "file": "Новая папка с объектами/sadfdasf.jpg"
-    },
-    {
-      "id": "sdfdss",
-      "kind": "image",
-      "title": "Sdfdss",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sdfdss.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sdfdss.jpg",
-      "file": "Новая папка с объектами/sdfdss.jpg"
-    },
-    {
-      "id": "sdfs",
-      "kind": "image",
-      "title": "Sdfs",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sdfs.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/sdfs.jpg",
-      "file": "Новая папка с объектами/sdfs.jpg"
-    },
-    {
-      "id": "wefqwf",
-      "kind": "image",
-      "title": "Wefqwf",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/wefqwf.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/wefqwf.jpg",
-      "file": "Новая папка с объектами/wefqwf.jpg"
-    },
-    {
-      "id": "wqdwq",
-      "kind": "image",
-      "title": "Wqdwq",
-      "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/wqdwq.jpg",
-      "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/wqdwq.jpg",
-      "file": "Новая папка с объектами/wqdwq.jpg"
-    },
-    {
-      "id": "cars-wallpaper-885",
+  "gallery": {
+    "images": [
+      {
+        "id": "gallery-zcz",
+        "kind": "image",
+        "title": "§Zcz",
+        "src": "/media/gallery/image/%C2%A7zcz.jpg",
+        "poster": "/media/gallery/image/%C2%A7zcz.jpg",
+        "file": "§zcz.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-2",
+        "kind": "image",
+        "title": "2",
+        "src": "/media/gallery/image/2.jpg",
+        "poster": "/media/gallery/image/2.jpg",
+        "file": "2.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-33",
+        "kind": "image",
+        "title": "33",
+        "src": "/media/gallery/image/33.jpg",
+        "poster": "/media/gallery/image/33.jpg",
+        "file": "33.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-3434",
+        "kind": "image",
+        "title": "3434",
+        "src": "/media/gallery/image/3434.jpg",
+        "poster": "/media/gallery/image/3434.jpg",
+        "file": "3434.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-asdssa",
+        "kind": "image",
+        "title": "Asdssa",
+        "src": "/media/gallery/image/asdssa.jpg",
+        "poster": "/media/gallery/image/asdssa.jpg",
+        "file": "asdssa.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-demo-aurora",
+        "kind": "image",
+        "title": "Demo Aurora",
+        "src": "/media/gallery/image/demo-aurora.png",
+        "poster": "/media/gallery/image/demo-aurora.png",
+        "file": "demo-aurora.png",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-low-presetже-лтыи-porsche-gt3-rs-в-маслянои-живописи",
+        "kind": "image",
+        "title": "Low PresetЖёлтый Porsche GT3 RS в масляной живописи",
+        "src": "/media/gallery/image/low%20preset%D0%96%D0%B5%CC%88%D0%BB%D1%82%D1%8B%D0%B8%CC%86%20Porsche%20GT3%20RS%20%D0%B2%20%D0%BC%D0%B0%D1%81%D0%BB%D1%8F%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8.jpg",
+        "poster": "/media/gallery/image/low%20preset%D0%96%D0%B5%CC%88%D0%BB%D1%82%D1%8B%D0%B8%CC%86%20Porsche%20GT3%20RS%20%D0%B2%20%D0%BC%D0%B0%D1%81%D0%BB%D1%8F%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8.jpg",
+        "file": "low presetЖёлтый Porsche GT3 RS в масляной живописи.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-sadfasdfs",
+        "kind": "image",
+        "title": "Sadfasdfs",
+        "src": "/media/gallery/image/sadfasdfs.jpg",
+        "poster": "/media/gallery/image/sadfasdfs.jpg",
+        "file": "sadfasdfs.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-sadfdasf",
+        "kind": "image",
+        "title": "Sadfdasf",
+        "src": "/media/gallery/image/sadfdasf.jpg",
+        "poster": "/media/gallery/image/sadfdasf.jpg",
+        "file": "sadfdasf.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-sdfdss",
+        "kind": "image",
+        "title": "Sdfdss",
+        "src": "/media/gallery/image/sdfdss.jpg",
+        "poster": "/media/gallery/image/sdfdss.jpg",
+        "file": "sdfdss.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-sdfs",
+        "kind": "image",
+        "title": "Sdfs",
+        "src": "/media/gallery/image/sdfs.jpg",
+        "poster": "/media/gallery/image/sdfs.jpg",
+        "file": "sdfs.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-wefqwf",
+        "kind": "image",
+        "title": "Wefqwf",
+        "src": "/media/gallery/image/wefqwf.jpg",
+        "poster": "/media/gallery/image/wefqwf.jpg",
+        "file": "wefqwf.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-wqdwq",
+        "kind": "image",
+        "title": "Wqdwq",
+        "src": "/media/gallery/image/wqdwq.jpg",
+        "poster": "/media/gallery/image/wqdwq.jpg",
+        "file": "wqdwq.jpg",
+        "section": "gallery"
+      }
+    ],
+    "videos": [
+      {
+        "id": "gallery-cars-wallpaper-885",
+        "kind": "video",
+        "title": "Cars Wallpaper 885",
+        "src": "/media/gallery/video/cars_wallpaper_885.mp4",
+        "poster": "/media/posters/auto-gallery-cars-wallpaper-885-21e2c269.jpg",
+        "file": "cars_wallpaper_885.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-demo-aurora-2",
+        "kind": "video",
+        "title": "Demo Aurora",
+        "src": "/media/gallery/video/demo-aurora.mp4",
+        "poster": "/media/posters/demo-aurora.jpg",
+        "file": "demo-aurora.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-demo-ocean",
+        "kind": "video",
+        "title": "Demo Ocean",
+        "src": "/media/gallery/video/demo-ocean.mp4",
+        "poster": "/media/posters/auto-gallery-demo-ocean-43c22ddc.jpg",
+        "file": "demo-ocean.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-1c4406a5-dd32-4d32-99b1-6f34f34f900a-1",
+        "kind": "video",
+        "title": "Video Output 1C4406A5 DD32 4D32 99B1 6F34F34F900A 1",
+        "src": "/media/gallery/video/video-output-1C4406A5-DD32-4D32-99B1-6F34F34F900A-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-1c4406a5-dd32-4d32-99b1-6f34f34f900a-1-a3e2b78f.jpg",
+        "file": "video-output-1C4406A5-DD32-4D32-99B1-6F34F34F900A-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-1ff1369e-3f1f-4ea2-84be-ef15aa2c6781-1",
+        "kind": "video",
+        "title": "Video Output 1FF1369E 3F1F 4EA2 84BE EF15AA2C6781 1",
+        "src": "/media/gallery/video/video-output-1FF1369E-3F1F-4EA2-84BE-EF15AA2C6781-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-1ff1369e-3f1f-4ea2-84be-ef15aa2c6781-1-2aa57ad7.jpg",
+        "file": "video-output-1FF1369E-3F1F-4EA2-84BE-EF15AA2C6781-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-24313c8e-1865-433e-bef4-aa72e003b669-1",
+        "kind": "video",
+        "title": "Video Output 24313C8E 1865 433E BEF4 AA72E003B669 1",
+        "src": "/media/gallery/video/video-output-24313C8E-1865-433E-BEF4-AA72E003B669-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-24313c8e-1865-433e-bef4-aa72e003b669-1-d02d471c.jpg",
+        "file": "video-output-24313C8E-1865-433E-BEF4-AA72E003B669-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-2a844f51-7bd3-4cca-9be6-eadbbc0fd880-1",
+        "kind": "video",
+        "title": "Video Output 2A844F51 7BD3 4CCA 9BE6 EADBBC0FD880 1",
+        "src": "/media/gallery/video/video-output-2A844F51-7BD3-4CCA-9BE6-EADBBC0FD880-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-2a844f51-7bd3-4cca-9be6-eadbbc0fd880-1-1f9127ab.jpg",
+        "file": "video-output-2A844F51-7BD3-4CCA-9BE6-EADBBC0FD880-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-382d8db0-209b-4418-adb0-0634cd87ae70-1",
+        "kind": "video",
+        "title": "Video Output 382D8DB0 209B 4418 ADB0 0634CD87AE70 1",
+        "src": "/media/gallery/video/video-output-382D8DB0-209B-4418-ADB0-0634CD87AE70-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-382d8db0-209b-4418-adb0-0634cd87ae70-1-40ed845e.jpg",
+        "file": "video-output-382D8DB0-209B-4418-ADB0-0634CD87AE70-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-41acf681-2192-45d0-94eb-670e2eaef950-1",
+        "kind": "video",
+        "title": "Video Output 41ACF681 2192 45D0 94EB 670E2EAEF950 1",
+        "src": "/media/gallery/video/video-output-41ACF681-2192-45D0-94EB-670E2EAEF950-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-41acf681-2192-45d0-94eb-670e2eaef950-1-99e8d0c3.jpg",
+        "file": "video-output-41ACF681-2192-45D0-94EB-670E2EAEF950-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-441d28ce-8f41-49bb-8ab8-1276b83cba98-1",
+        "kind": "video",
+        "title": "Video Output 441D28CE 8F41 49BB 8AB8 1276B83CBA98 1",
+        "src": "/media/gallery/video/video-output-441D28CE-8F41-49BB-8AB8-1276B83CBA98-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-441d28ce-8f41-49bb-8ab8-1276b83cba98-1-97348fe3.jpg",
+        "file": "video-output-441D28CE-8F41-49BB-8AB8-1276B83CBA98-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-56fdb17e-c8e2-4f82-b1f4-675e6d2d619c-1",
+        "kind": "video",
+        "title": "Video Output 56FDB17E C8E2 4F82 B1F4 675E6D2D619C 1",
+        "src": "/media/gallery/video/video-output-56FDB17E-C8E2-4F82-B1F4-675E6D2D619C-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-56fdb17e-c8e2-4f82-b1f4-675e6d2d619c-1-21b6d842.jpg",
+        "file": "video-output-56FDB17E-C8E2-4F82-B1F4-675E6D2D619C-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-af6a625a-c4b3-4d0b-8e65-4aef207c98fc-1",
+        "kind": "video",
+        "title": "Video Output AF6A625A C4B3 4D0B 8E65 4AEF207C98FC 1",
+        "src": "/media/gallery/video/video-output-AF6A625A-C4B3-4D0B-8E65-4AEF207C98FC-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-af6a625a-c4b3-4d0b-8e65-4aef207c98fc-1-0c30d300.jpg",
+        "file": "video-output-AF6A625A-C4B3-4D0B-8E65-4AEF207C98FC-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-b79296e8-b031-49b4-8886-785112c6a114-1",
+        "kind": "video",
+        "title": "Video Output B79296E8 B031 49B4 8886 785112C6A114 1",
+        "src": "/media/gallery/video/video-output-B79296E8-B031-49B4-8886-785112C6A114-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-b79296e8-b031-49b4-8886-785112c6a114-1-ac3b2122.jpg",
+        "file": "video-output-B79296E8-B031-49B4-8886-785112C6A114-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-c892d150-f1af-4daa-a3a1-e7275f218b8e-1",
+        "kind": "video",
+        "title": "Video Output C892D150 F1AF 4DAA A3A1 E7275F218B8E 1",
+        "src": "/media/gallery/video/video-output-C892D150-F1AF-4DAA-A3A1-E7275F218B8E-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-c892d150-f1af-4daa-a3a1-e7275f218b8e-1-079f8a91.jpg",
+        "file": "video-output-C892D150-F1AF-4DAA-A3A1-E7275F218B8E-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-cfb8c837-034a-47a0-98b4-d035c8ffd4ab-1",
+        "kind": "video",
+        "title": "Video Output CFB8C837 034A 47A0 98B4 D035C8FFD4AB 1",
+        "src": "/media/gallery/video/video-output-CFB8C837-034A-47A0-98B4-D035C8FFD4AB-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-cfb8c837-034a-47a0-98b4-d035c8ffd4ab-1-b6c7ce40.jpg",
+        "file": "video-output-CFB8C837-034A-47A0-98B4-D035C8FFD4AB-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-d5edb736-dde6-4b45-8953-853ce0a7ee28-1",
+        "kind": "video",
+        "title": "Video Output D5EDB736 DDE6 4B45 8953 853CE0A7EE28 1",
+        "src": "/media/gallery/video/video-output-D5EDB736-DDE6-4B45-8953-853CE0A7EE28-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-d5edb736-dde6-4b45-8953-853ce0a7ee28-1-006064c1.jpg",
+        "file": "video-output-D5EDB736-DDE6-4B45-8953-853CE0A7EE28-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-db5a6db0-2b0b-4012-9d15-2c32bd6caec4-1",
+        "kind": "video",
+        "title": "Video Output DB5A6DB0 2B0B 4012 9D15 2C32BD6CAEC4 1",
+        "src": "/media/gallery/video/video-output-DB5A6DB0-2B0B-4012-9D15-2C32BD6CAEC4-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-db5a6db0-2b0b-4012-9d15-2c32bd6caec4-1-c018d582.jpg",
+        "file": "video-output-DB5A6DB0-2B0B-4012-9D15-2C32BD6CAEC4-1.mp4",
+        "section": "gallery"
+      }
+    ],
+    "items": [
+      {
+        "id": "gallery-zcz",
+        "kind": "image",
+        "title": "§Zcz",
+        "src": "/media/gallery/image/%C2%A7zcz.jpg",
+        "poster": "/media/gallery/image/%C2%A7zcz.jpg",
+        "file": "§zcz.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-2",
+        "kind": "image",
+        "title": "2",
+        "src": "/media/gallery/image/2.jpg",
+        "poster": "/media/gallery/image/2.jpg",
+        "file": "2.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-33",
+        "kind": "image",
+        "title": "33",
+        "src": "/media/gallery/image/33.jpg",
+        "poster": "/media/gallery/image/33.jpg",
+        "file": "33.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-3434",
+        "kind": "image",
+        "title": "3434",
+        "src": "/media/gallery/image/3434.jpg",
+        "poster": "/media/gallery/image/3434.jpg",
+        "file": "3434.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-asdssa",
+        "kind": "image",
+        "title": "Asdssa",
+        "src": "/media/gallery/image/asdssa.jpg",
+        "poster": "/media/gallery/image/asdssa.jpg",
+        "file": "asdssa.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-demo-aurora",
+        "kind": "image",
+        "title": "Demo Aurora",
+        "src": "/media/gallery/image/demo-aurora.png",
+        "poster": "/media/gallery/image/demo-aurora.png",
+        "file": "demo-aurora.png",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-low-presetже-лтыи-porsche-gt3-rs-в-маслянои-живописи",
+        "kind": "image",
+        "title": "Low PresetЖёлтый Porsche GT3 RS в масляной живописи",
+        "src": "/media/gallery/image/low%20preset%D0%96%D0%B5%CC%88%D0%BB%D1%82%D1%8B%D0%B8%CC%86%20Porsche%20GT3%20RS%20%D0%B2%20%D0%BC%D0%B0%D1%81%D0%BB%D1%8F%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8.jpg",
+        "poster": "/media/gallery/image/low%20preset%D0%96%D0%B5%CC%88%D0%BB%D1%82%D1%8B%D0%B8%CC%86%20Porsche%20GT3%20RS%20%D0%B2%20%D0%BC%D0%B0%D1%81%D0%BB%D1%8F%D0%BD%D0%BE%D0%B8%CC%86%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%B8.jpg",
+        "file": "low presetЖёлтый Porsche GT3 RS в масляной живописи.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-sadfasdfs",
+        "kind": "image",
+        "title": "Sadfasdfs",
+        "src": "/media/gallery/image/sadfasdfs.jpg",
+        "poster": "/media/gallery/image/sadfasdfs.jpg",
+        "file": "sadfasdfs.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-sadfdasf",
+        "kind": "image",
+        "title": "Sadfdasf",
+        "src": "/media/gallery/image/sadfdasf.jpg",
+        "poster": "/media/gallery/image/sadfdasf.jpg",
+        "file": "sadfdasf.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-sdfdss",
+        "kind": "image",
+        "title": "Sdfdss",
+        "src": "/media/gallery/image/sdfdss.jpg",
+        "poster": "/media/gallery/image/sdfdss.jpg",
+        "file": "sdfdss.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-sdfs",
+        "kind": "image",
+        "title": "Sdfs",
+        "src": "/media/gallery/image/sdfs.jpg",
+        "poster": "/media/gallery/image/sdfs.jpg",
+        "file": "sdfs.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-wefqwf",
+        "kind": "image",
+        "title": "Wefqwf",
+        "src": "/media/gallery/image/wefqwf.jpg",
+        "poster": "/media/gallery/image/wefqwf.jpg",
+        "file": "wefqwf.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-wqdwq",
+        "kind": "image",
+        "title": "Wqdwq",
+        "src": "/media/gallery/image/wqdwq.jpg",
+        "poster": "/media/gallery/image/wqdwq.jpg",
+        "file": "wqdwq.jpg",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-cars-wallpaper-885",
+        "kind": "video",
+        "title": "Cars Wallpaper 885",
+        "src": "/media/gallery/video/cars_wallpaper_885.mp4",
+        "poster": "/media/posters/auto-gallery-cars-wallpaper-885-21e2c269.jpg",
+        "file": "cars_wallpaper_885.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-demo-aurora-2",
+        "kind": "video",
+        "title": "Demo Aurora",
+        "src": "/media/gallery/video/demo-aurora.mp4",
+        "poster": "/media/posters/demo-aurora.jpg",
+        "file": "demo-aurora.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-demo-ocean",
+        "kind": "video",
+        "title": "Demo Ocean",
+        "src": "/media/gallery/video/demo-ocean.mp4",
+        "poster": "/media/posters/auto-gallery-demo-ocean-43c22ddc.jpg",
+        "file": "demo-ocean.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-1c4406a5-dd32-4d32-99b1-6f34f34f900a-1",
+        "kind": "video",
+        "title": "Video Output 1C4406A5 DD32 4D32 99B1 6F34F34F900A 1",
+        "src": "/media/gallery/video/video-output-1C4406A5-DD32-4D32-99B1-6F34F34F900A-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-1c4406a5-dd32-4d32-99b1-6f34f34f900a-1-a3e2b78f.jpg",
+        "file": "video-output-1C4406A5-DD32-4D32-99B1-6F34F34F900A-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-1ff1369e-3f1f-4ea2-84be-ef15aa2c6781-1",
+        "kind": "video",
+        "title": "Video Output 1FF1369E 3F1F 4EA2 84BE EF15AA2C6781 1",
+        "src": "/media/gallery/video/video-output-1FF1369E-3F1F-4EA2-84BE-EF15AA2C6781-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-1ff1369e-3f1f-4ea2-84be-ef15aa2c6781-1-2aa57ad7.jpg",
+        "file": "video-output-1FF1369E-3F1F-4EA2-84BE-EF15AA2C6781-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-24313c8e-1865-433e-bef4-aa72e003b669-1",
+        "kind": "video",
+        "title": "Video Output 24313C8E 1865 433E BEF4 AA72E003B669 1",
+        "src": "/media/gallery/video/video-output-24313C8E-1865-433E-BEF4-AA72E003B669-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-24313c8e-1865-433e-bef4-aa72e003b669-1-d02d471c.jpg",
+        "file": "video-output-24313C8E-1865-433E-BEF4-AA72E003B669-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-2a844f51-7bd3-4cca-9be6-eadbbc0fd880-1",
+        "kind": "video",
+        "title": "Video Output 2A844F51 7BD3 4CCA 9BE6 EADBBC0FD880 1",
+        "src": "/media/gallery/video/video-output-2A844F51-7BD3-4CCA-9BE6-EADBBC0FD880-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-2a844f51-7bd3-4cca-9be6-eadbbc0fd880-1-1f9127ab.jpg",
+        "file": "video-output-2A844F51-7BD3-4CCA-9BE6-EADBBC0FD880-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-382d8db0-209b-4418-adb0-0634cd87ae70-1",
+        "kind": "video",
+        "title": "Video Output 382D8DB0 209B 4418 ADB0 0634CD87AE70 1",
+        "src": "/media/gallery/video/video-output-382D8DB0-209B-4418-ADB0-0634CD87AE70-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-382d8db0-209b-4418-adb0-0634cd87ae70-1-40ed845e.jpg",
+        "file": "video-output-382D8DB0-209B-4418-ADB0-0634CD87AE70-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-41acf681-2192-45d0-94eb-670e2eaef950-1",
+        "kind": "video",
+        "title": "Video Output 41ACF681 2192 45D0 94EB 670E2EAEF950 1",
+        "src": "/media/gallery/video/video-output-41ACF681-2192-45D0-94EB-670E2EAEF950-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-41acf681-2192-45d0-94eb-670e2eaef950-1-99e8d0c3.jpg",
+        "file": "video-output-41ACF681-2192-45D0-94EB-670E2EAEF950-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-441d28ce-8f41-49bb-8ab8-1276b83cba98-1",
+        "kind": "video",
+        "title": "Video Output 441D28CE 8F41 49BB 8AB8 1276B83CBA98 1",
+        "src": "/media/gallery/video/video-output-441D28CE-8F41-49BB-8AB8-1276B83CBA98-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-441d28ce-8f41-49bb-8ab8-1276b83cba98-1-97348fe3.jpg",
+        "file": "video-output-441D28CE-8F41-49BB-8AB8-1276B83CBA98-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-56fdb17e-c8e2-4f82-b1f4-675e6d2d619c-1",
+        "kind": "video",
+        "title": "Video Output 56FDB17E C8E2 4F82 B1F4 675E6D2D619C 1",
+        "src": "/media/gallery/video/video-output-56FDB17E-C8E2-4F82-B1F4-675E6D2D619C-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-56fdb17e-c8e2-4f82-b1f4-675e6d2d619c-1-21b6d842.jpg",
+        "file": "video-output-56FDB17E-C8E2-4F82-B1F4-675E6D2D619C-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-af6a625a-c4b3-4d0b-8e65-4aef207c98fc-1",
+        "kind": "video",
+        "title": "Video Output AF6A625A C4B3 4D0B 8E65 4AEF207C98FC 1",
+        "src": "/media/gallery/video/video-output-AF6A625A-C4B3-4D0B-8E65-4AEF207C98FC-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-af6a625a-c4b3-4d0b-8e65-4aef207c98fc-1-0c30d300.jpg",
+        "file": "video-output-AF6A625A-C4B3-4D0B-8E65-4AEF207C98FC-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-b79296e8-b031-49b4-8886-785112c6a114-1",
+        "kind": "video",
+        "title": "Video Output B79296E8 B031 49B4 8886 785112C6A114 1",
+        "src": "/media/gallery/video/video-output-B79296E8-B031-49B4-8886-785112C6A114-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-b79296e8-b031-49b4-8886-785112c6a114-1-ac3b2122.jpg",
+        "file": "video-output-B79296E8-B031-49B4-8886-785112C6A114-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-c892d150-f1af-4daa-a3a1-e7275f218b8e-1",
+        "kind": "video",
+        "title": "Video Output C892D150 F1AF 4DAA A3A1 E7275F218B8E 1",
+        "src": "/media/gallery/video/video-output-C892D150-F1AF-4DAA-A3A1-E7275F218B8E-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-c892d150-f1af-4daa-a3a1-e7275f218b8e-1-079f8a91.jpg",
+        "file": "video-output-C892D150-F1AF-4DAA-A3A1-E7275F218B8E-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-cfb8c837-034a-47a0-98b4-d035c8ffd4ab-1",
+        "kind": "video",
+        "title": "Video Output CFB8C837 034A 47A0 98B4 D035C8FFD4AB 1",
+        "src": "/media/gallery/video/video-output-CFB8C837-034A-47A0-98B4-D035C8FFD4AB-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-cfb8c837-034a-47a0-98b4-d035c8ffd4ab-1-b6c7ce40.jpg",
+        "file": "video-output-CFB8C837-034A-47A0-98B4-D035C8FFD4AB-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-d5edb736-dde6-4b45-8953-853ce0a7ee28-1",
+        "kind": "video",
+        "title": "Video Output D5EDB736 DDE6 4B45 8953 853CE0A7EE28 1",
+        "src": "/media/gallery/video/video-output-D5EDB736-DDE6-4B45-8953-853CE0A7EE28-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-d5edb736-dde6-4b45-8953-853ce0a7ee28-1-006064c1.jpg",
+        "file": "video-output-D5EDB736-DDE6-4B45-8953-853CE0A7EE28-1.mp4",
+        "section": "gallery"
+      },
+      {
+        "id": "gallery-video-output-db5a6db0-2b0b-4012-9d15-2c32bd6caec4-1",
+        "kind": "video",
+        "title": "Video Output DB5A6DB0 2B0B 4012 9D15 2C32BD6CAEC4 1",
+        "src": "/media/gallery/video/video-output-DB5A6DB0-2B0B-4012-9D15-2C32BD6CAEC4-1.mp4",
+        "poster": "/media/posters/auto-gallery-video-output-db5a6db0-2b0b-4012-9d15-2c32bd6caec4-1-c018d582.jpg",
+        "file": "video-output-DB5A6DB0-2B0B-4012-9D15-2C32BD6CAEC4-1.mp4",
+        "section": "gallery"
+      }
+    ],
+    "item": {
+      "id": "gallery-cars-wallpaper-885",
       "kind": "video",
       "title": "Cars Wallpaper 885",
-      "src": "/media/videos/cars_wallpaper_885.mp4",
-      "poster": "/media/posters/auto-cars-wallpaper-885.jpg",
-      "file": "cars_wallpaper_885.mp4"
-    },
-    {
-      "id": "demo-aurora-2",
-      "kind": "video",
-      "title": "Demo Aurora",
-      "src": "/media/videos/demo-aurora.mp4",
-      "poster": "/media/posters/demo-aurora.jpg",
-      "file": "demo-aurora.mp4"
-    },
-    {
-      "id": "demo-ocean",
-      "kind": "video",
-      "title": "Demo Ocean",
-      "src": "/media/videos/demo-ocean.mp4",
-      "poster": "/media/posters/auto-demo-ocean.jpg",
-      "file": "demo-ocean.mp4"
-    },
-    {
-      "id": "video-output-1c4406a5-dd32-4d32-99b1-6f34f34f900a-1",
-      "kind": "video",
-      "title": "Video Output 1C4406A5 DD32 4D32 99B1 6F34F34F900A 1",
-      "src": "/media/videos/video-output-1C4406A5-DD32-4D32-99B1-6F34F34F900A-1.mp4",
-      "poster": "/media/posters/auto-video-output-1c4406a5-dd32-4d32-99b1-6f34f34f900a-1.jpg",
-      "file": "video-output-1C4406A5-DD32-4D32-99B1-6F34F34F900A-1.mp4"
-    },
-    {
-      "id": "video-output-1ff1369e-3f1f-4ea2-84be-ef15aa2c6781-1",
-      "kind": "video",
-      "title": "Video Output 1FF1369E 3F1F 4EA2 84BE EF15AA2C6781 1",
-      "src": "/media/videos/video-output-1FF1369E-3F1F-4EA2-84BE-EF15AA2C6781-1.mp4",
-      "poster": "/media/posters/auto-video-output-1ff1369e-3f1f-4ea2-84be-ef15aa2c6781-1.jpg",
-      "file": "video-output-1FF1369E-3F1F-4EA2-84BE-EF15AA2C6781-1.mp4"
-    },
-    {
-      "id": "video-output-24313c8e-1865-433e-bef4-aa72e003b669-1",
-      "kind": "video",
-      "title": "Video Output 24313C8E 1865 433E BEF4 AA72E003B669 1",
-      "src": "/media/videos/video-output-24313C8E-1865-433E-BEF4-AA72E003B669-1.mp4",
-      "poster": "/media/posters/auto-video-output-24313c8e-1865-433e-bef4-aa72e003b669-1.jpg",
-      "file": "video-output-24313C8E-1865-433E-BEF4-AA72E003B669-1.mp4"
-    },
-    {
-      "id": "video-output-2a844f51-7bd3-4cca-9be6-eadbbc0fd880-1",
-      "kind": "video",
-      "title": "Video Output 2A844F51 7BD3 4CCA 9BE6 EADBBC0FD880 1",
-      "src": "/media/videos/video-output-2A844F51-7BD3-4CCA-9BE6-EADBBC0FD880-1.mp4",
-      "poster": "/media/posters/auto-video-output-2a844f51-7bd3-4cca-9be6-eadbbc0fd880-1.jpg",
-      "file": "video-output-2A844F51-7BD3-4CCA-9BE6-EADBBC0FD880-1.mp4"
-    },
-    {
-      "id": "video-output-382d8db0-209b-4418-adb0-0634cd87ae70-1",
-      "kind": "video",
-      "title": "Video Output 382D8DB0 209B 4418 ADB0 0634CD87AE70 1",
-      "src": "/media/videos/video-output-382D8DB0-209B-4418-ADB0-0634CD87AE70-1.mp4",
-      "poster": "/media/posters/auto-video-output-382d8db0-209b-4418-adb0-0634cd87ae70-1.jpg",
-      "file": "video-output-382D8DB0-209B-4418-ADB0-0634CD87AE70-1.mp4"
-    },
-    {
-      "id": "video-output-41acf681-2192-45d0-94eb-670e2eaef950-1",
-      "kind": "video",
-      "title": "Video Output 41ACF681 2192 45D0 94EB 670E2EAEF950 1",
-      "src": "/media/videos/video-output-41ACF681-2192-45D0-94EB-670E2EAEF950-1.mp4",
-      "poster": "/media/posters/auto-video-output-41acf681-2192-45d0-94eb-670e2eaef950-1.jpg",
-      "file": "video-output-41ACF681-2192-45D0-94EB-670E2EAEF950-1.mp4"
-    },
-    {
-      "id": "video-output-441d28ce-8f41-49bb-8ab8-1276b83cba98-1",
-      "kind": "video",
-      "title": "Video Output 441D28CE 8F41 49BB 8AB8 1276B83CBA98 1",
-      "src": "/media/videos/video-output-441D28CE-8F41-49BB-8AB8-1276B83CBA98-1.mp4",
-      "poster": "/media/posters/auto-video-output-441d28ce-8f41-49bb-8ab8-1276b83cba98-1.jpg",
-      "file": "video-output-441D28CE-8F41-49BB-8AB8-1276B83CBA98-1.mp4"
-    },
-    {
-      "id": "video-output-56fdb17e-c8e2-4f82-b1f4-675e6d2d619c-1",
-      "kind": "video",
-      "title": "Video Output 56FDB17E C8E2 4F82 B1F4 675E6D2D619C 1",
-      "src": "/media/videos/video-output-56FDB17E-C8E2-4F82-B1F4-675E6D2D619C-1.mp4",
-      "poster": "/media/posters/auto-video-output-56fdb17e-c8e2-4f82-b1f4-675e6d2d619c-1.jpg",
-      "file": "video-output-56FDB17E-C8E2-4F82-B1F4-675E6D2D619C-1.mp4"
-    },
-    {
-      "id": "video-output-af6a625a-c4b3-4d0b-8e65-4aef207c98fc-1",
-      "kind": "video",
-      "title": "Video Output AF6A625A C4B3 4D0B 8E65 4AEF207C98FC 1",
-      "src": "/media/videos/video-output-AF6A625A-C4B3-4D0B-8E65-4AEF207C98FC-1.mp4",
-      "poster": "/media/posters/auto-video-output-af6a625a-c4b3-4d0b-8e65-4aef207c98fc-1.jpg",
-      "file": "video-output-AF6A625A-C4B3-4D0B-8E65-4AEF207C98FC-1.mp4"
-    },
-    {
-      "id": "video-output-b79296e8-b031-49b4-8886-785112c6a114-1",
-      "kind": "video",
-      "title": "Video Output B79296E8 B031 49B4 8886 785112C6A114 1",
-      "src": "/media/videos/video-output-B79296E8-B031-49B4-8886-785112C6A114-1.mp4",
-      "poster": "/media/posters/auto-video-output-b79296e8-b031-49b4-8886-785112c6a114-1.jpg",
-      "file": "video-output-B79296E8-B031-49B4-8886-785112C6A114-1.mp4"
-    },
-    {
-      "id": "video-output-c892d150-f1af-4daa-a3a1-e7275f218b8e-1",
-      "kind": "video",
-      "title": "Video Output C892D150 F1AF 4DAA A3A1 E7275F218B8E 1",
-      "src": "/media/videos/video-output-C892D150-F1AF-4DAA-A3A1-E7275F218B8E-1.mp4",
-      "poster": "/media/posters/auto-video-output-c892d150-f1af-4daa-a3a1-e7275f218b8e-1.jpg",
-      "file": "video-output-C892D150-F1AF-4DAA-A3A1-E7275F218B8E-1.mp4"
-    },
-    {
-      "id": "video-output-cfb8c837-034a-47a0-98b4-d035c8ffd4ab-1",
-      "kind": "video",
-      "title": "Video Output CFB8C837 034A 47A0 98B4 D035C8FFD4AB 1",
-      "src": "/media/videos/video-output-CFB8C837-034A-47A0-98B4-D035C8FFD4AB-1.mp4",
-      "poster": "/media/posters/auto-video-output-cfb8c837-034a-47a0-98b4-d035c8ffd4ab-1.jpg",
-      "file": "video-output-CFB8C837-034A-47A0-98B4-D035C8FFD4AB-1.mp4"
-    },
-    {
-      "id": "video-output-d5edb736-dde6-4b45-8953-853ce0a7ee28-1",
-      "kind": "video",
-      "title": "Video Output D5EDB736 DDE6 4B45 8953 853CE0A7EE28 1",
-      "src": "/media/videos/video-output-D5EDB736-DDE6-4B45-8953-853CE0A7EE28-1.mp4",
-      "poster": "/media/posters/auto-video-output-d5edb736-dde6-4b45-8953-853ce0a7ee28-1.jpg",
-      "file": "video-output-D5EDB736-DDE6-4B45-8953-853CE0A7EE28-1.mp4"
-    },
-    {
-      "id": "video-output-db5a6db0-2b0b-4012-9d15-2c32bd6caec4-1",
-      "kind": "video",
-      "title": "Video Output DB5A6DB0 2B0B 4012 9D15 2C32BD6CAEC4 1",
-      "src": "/media/videos/video-output-DB5A6DB0-2B0B-4012-9D15-2C32BD6CAEC4-1.mp4",
-      "poster": "/media/posters/auto-video-output-db5a6db0-2b0b-4012-9d15-2c32bd6caec4-1.jpg",
-      "file": "video-output-DB5A6DB0-2B0B-4012-9D15-2C32BD6CAEC4-1.mp4"
+      "src": "/media/gallery/video/cars_wallpaper_885.mp4",
+      "poster": "/media/posters/auto-gallery-cars-wallpaper-885-21e2c269.jpg",
+      "file": "cars_wallpaper_885.mp4",
+      "section": "gallery"
     }
-  ],
-  "showcase": [
-    {
-      "id": "showcase-cf10f5e0-23c6-4c44-adc8-d07c583c48f8",
-      "kind": "video",
-      "title": "Cf10f5e0 23c6 4c44 Adc8 D07c583c48f8",
-      "src": "/media/showcase/cf10f5e0-23c6-4c44-adc8-d07c583c48f8.mp4",
-      "poster": null
-    },
-    {
-      "id": "showcase-wallpaper-4",
+  },
+  "hero": {
+    "images": [],
+    "videos": [],
+    "items": [],
+    "item": null
+  },
+  "lockScreen": {
+    "images": [
+      {
+        "id": "lockScreen-wallpaper-4",
+        "kind": "image",
+        "title": "Wallpaper (4)",
+        "src": "/media/lockScreen/image/Wallpaper_%20(4).png",
+        "poster": "/media/lockScreen/image/Wallpaper_%20(4).png",
+        "file": "Wallpaper_ (4).png",
+        "section": "lockScreen"
+      }
+    ],
+    "videos": [],
+    "items": [
+      {
+        "id": "lockScreen-wallpaper-4",
+        "kind": "image",
+        "title": "Wallpaper (4)",
+        "src": "/media/lockScreen/image/Wallpaper_%20(4).png",
+        "poster": "/media/lockScreen/image/Wallpaper_%20(4).png",
+        "file": "Wallpaper_ (4).png",
+        "section": "lockScreen"
+      }
+    ],
+    "item": {
+      "id": "lockScreen-wallpaper-4",
       "kind": "image",
       "title": "Wallpaper (4)",
-      "src": "/media/showcase/Wallpaper_%20(4).png",
-      "poster": "/media/showcase/Wallpaper_%20(4).png"
+      "src": "/media/lockScreen/image/Wallpaper_%20(4).png",
+      "poster": "/media/lockScreen/image/Wallpaper_%20(4).png",
+      "file": "Wallpaper_ (4).png",
+      "section": "lockScreen"
     }
-  ],
-  "hero": {
-    "id": "cars-wallpaper-885",
-    "kind": "video",
-    "title": "Cars Wallpaper 885",
-    "src": "/media/videos/cars_wallpaper_885.mp4",
-    "poster": "/media/posters/auto-cars-wallpaper-885.jpg",
-    "file": "cars_wallpaper_885.mp4"
-  },
-  "fallbackHero": {
-    "id": "zcz",
-    "kind": "image",
-    "title": "§Zcz",
-    "src": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/%C2%A7zcz.jpg",
-    "poster": "/media/images/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8/%C2%A7zcz.jpg",
-    "file": "Новая папка с объектами/§zcz.jpg"
   },
   "demo": {
-    "id": "showcase-cf10f5e0-23c6-4c44-adc8-d07c583c48f8",
-    "kind": "video",
-    "title": "Cf10f5e0 23c6 4c44 Adc8 D07c583c48f8",
-    "src": "/media/showcase/cf10f5e0-23c6-4c44-adc8-d07c583c48f8.mp4",
-    "poster": null
+    "images": [],
+    "videos": [
+      {
+        "id": "demo-cf10f5e0-23c6-4c44-adc8-d07c583c48f8",
+        "kind": "video",
+        "title": "Cf10f5e0 23c6 4c44 Adc8 D07c583c48f8",
+        "src": "/media/demo/video/cf10f5e0-23c6-4c44-adc8-d07c583c48f8.mp4",
+        "poster": "/media/posters/auto-demo-cf10f5e0-23c6-4c44-adc8-d07c583c48f8-5259c4a5.jpg",
+        "file": "cf10f5e0-23c6-4c44-adc8-d07c583c48f8.mp4",
+        "section": "demo"
+      }
+    ],
+    "items": [
+      {
+        "id": "demo-cf10f5e0-23c6-4c44-adc8-d07c583c48f8",
+        "kind": "video",
+        "title": "Cf10f5e0 23c6 4c44 Adc8 D07c583c48f8",
+        "src": "/media/demo/video/cf10f5e0-23c6-4c44-adc8-d07c583c48f8.mp4",
+        "poster": "/media/posters/auto-demo-cf10f5e0-23c6-4c44-adc8-d07c583c48f8-5259c4a5.jpg",
+        "file": "cf10f5e0-23c6-4c44-adc8-d07c583c48f8.mp4",
+        "section": "demo"
+      }
+    ],
+    "item": {
+      "id": "demo-cf10f5e0-23c6-4c44-adc8-d07c583c48f8",
+      "kind": "video",
+      "title": "Cf10f5e0 23c6 4c44 Adc8 D07c583c48f8",
+      "src": "/media/demo/video/cf10f5e0-23c6-4c44-adc8-d07c583c48f8.mp4",
+      "poster": "/media/posters/auto-demo-cf10f5e0-23c6-4c44-adc8-d07c583c48f8-5259c4a5.jpg",
+      "file": "cf10f5e0-23c6-4c44-adc8-d07c583c48f8.mp4",
+      "section": "demo"
+    }
   }
 }

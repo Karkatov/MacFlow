@@ -6,13 +6,13 @@ export const privacyPolicy: Record<Locale, LegalDocument> = {
     title: 'Политика обработки персональных данных',
     updatedAt: '2026-10-23',
     intro:
-      'Настоящая Политика обработки персональных данных (далее — Политика) определяет порядок обработки и защиты персональных данных пользователей сайта и программы для ЭВМ «LiveWall» для macOS, а также порядок и условия обработки персональных данных Оператором.',
+      'Настоящая Политика обработки персональных данных (далее — Политика) определяет порядок обработки и защиты персональных данных пользователей сайта и программы для ЭВМ «MacFlow» для macOS, а также порядок и условия обработки персональных данных Оператором.',
     sections: [
       {
         id: 'general',
         title: '1. Общие положения',
         paragraphs: [
-          '1.1. Политика описывает обработку персональных данных при посещении сайта, покупке, скачивании, активации и использовании LiveWall для macOS, а также при обращении в поддержку.',
+          '1.1. Политика описывает обработку персональных данных при посещении сайта, покупке, скачивании, активации и использовании MacFlow для macOS, а также при обращении в поддержку.',
           '1.2. Оператор определяет цели и способы обработки и соблюдает Федеральный закон № 152-ФЗ «О персональных данных» и иные применимые нормы.',
           '1.3. Платёжные сервисы, Apple и иные поставщики могут обрабатывать данные как самостоятельные операторы по собственным документам; их роли нужно проверить по фактической интеграции.',
         ],
@@ -110,13 +110,13 @@ export const privacyPolicy: Record<Locale, LegalDocument> = {
     title: 'Personal Data Processing Policy',
     updatedAt: '2026-10-23',
     intro:
-      'This Policy defines the procedure for processing and protecting personal data of users of the website and the LiveWall macOS application, as well as the procedure and conditions for processing personal data by the Operator.',
+      'This Policy defines the procedure for processing and protecting personal data of users of the website and the MacFlow macOS application, as well as the procedure and conditions for processing personal data by the Operator.',
     sections: [
       {
         id: 'general',
         title: '1. General Provisions',
         paragraphs: [
-          '1.1. This Policy describes the processing of personal data when visiting the website, making a purchase, downloading, activating and using LiveWall for macOS, as well as when contacting support.',
+          '1.1. This Policy describes the processing of personal data when visiting the website, making a purchase, downloading, activating and using MacFlow for macOS, as well as when contacting support.',
           '1.2. The Operator determines the purposes and methods of processing and complies with Federal Law No. 152-FZ "On Personal Data" and other applicable regulations.',
           '1.3. Payment services, Apple and other providers may process data as independent data controllers under their own policies.',
         ],

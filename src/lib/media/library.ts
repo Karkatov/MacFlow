@@ -1,6 +1,7 @@
 import manifest from '@/generated/media-manifest.json';
 
 export type MediaKind = 'image' | 'video';
+export type MediaSection = 'gallery' | 'hero' | 'lockScreen' | 'demo';
 
 export type MediaItem = {
   id: string;
@@ -9,36 +10,64 @@ export type MediaItem = {
   src: string;
   poster: string | null;
   file: string;
+  section: MediaSection;
 };
+
+type MediaPool = {
+  images: MediaItem[];
+  videos: MediaItem[];
+  items: MediaItem[];
+  item: MediaItem | null;
+};
+
+type SectionCount = { images: number; videos: number };
 
 type Manifest = {
   generatedAt: string;
-  counts: { images: number; videos: number; showcase: number };
-  items: MediaItem[];
-  showcase: MediaItem[];
-  hero: MediaItem | null;
-  fallbackHero: MediaItem | null;
-  demo: MediaItem | null;
+  counts: SectionCount & {
+    hero: SectionCount;
+    lockScreen: SectionCount;
+    demo: SectionCount;
+  };
+  gallery: MediaPool;
+  hero: MediaPool;
+  lockScreen: MediaPool;
+  demo: MediaPool;
 };
 
 const data = manifest as Manifest;
 
-/** Все обои из корневых папок `wallpapers/images` и `wallpapers/videos`. */
-export const mediaItems: MediaItem[] = data.items;
+/** Все обои из `wallpapers/gallery/{image,video}`. */
+export const mediaItems: MediaItem[] = data.gallery.items;
 
-/** Ролики/картинки из `wallpapers/showcase`. */
-export const showcaseItems: MediaItem[] = data.showcase;
+/** Отдельные пулы для секций сайта. */
+export const galleryImages: MediaItem[] = data.gallery.images;
+export const galleryVideos: MediaItem[] = data.gallery.videos;
+export const heroItems: MediaItem[] = data.hero.items;
+export const lockScreenItems: MediaItem[] = data.lockScreen.items;
+export const demoItems: MediaItem[] = data.demo.items;
+
+const firstGalleryVideo = data.gallery.videos[0] ?? null;
+const firstGalleryImage = data.gallery.images[0] ?? null;
 
 /** Обои для интерактивного lock screen в hero. */
-export const heroMedia: MediaItem | null = data.hero ?? data.fallbackHero;
+export const heroMedia: MediaItem | null = data.hero.item ?? firstGalleryVideo ?? firstGalleryImage;
 
-/** Видео для блока «Watch it in action». */
-export const demoMedia: MediaItem | null = data.demo;
+/** Медиа для блока «Экран блокировки». */
+export const lockScreenMedia: MediaItem | null =
+  data.lockScreen.item ?? data.hero.item ?? firstGalleryVideo ?? firstGalleryImage;
 
-export const mediaCounts = data.counts;
+/** Медиа для блока «Watch it in action». */
+export const demoMedia: MediaItem | null = data.demo.item ?? firstGalleryVideo ?? firstGalleryImage;
+
+export const mediaCounts = {
+  images: data.counts.images,
+  videos: data.counts.videos,
+};
 
 export function galleryItems(limit?: number): MediaItem[] {
-  const items = mediaItems.length > 0 ? mediaItems : showcaseItems;
+  const fallback = [...data.hero.items, ...data.lockScreen.items, ...data.demo.items];
+  const items = mediaItems.length > 0 ? mediaItems : fallback;
   return typeof limit === 'number' ? items.slice(0, limit) : items;
 }
 

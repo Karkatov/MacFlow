@@ -1,11 +1,11 @@
 import { getTranslations } from 'next-intl/server';
-import { showcaseItems, demoMedia, heroMedia } from '@/lib/media/library';
+import { lockScreenMedia } from '@/lib/media/library';
 import { LazyVideo } from './lazy-video';
 
 /** Блок про живые обои на экране блокировки. */
 export async function LockScreenSection() {
   const t = await getTranslations('landing.lockScreen');
-  const media = showcaseItems[0] ?? demoMedia ?? heroMedia;
+  const media = lockScreenMedia;
 
   return (
     <section className="themes-section">
